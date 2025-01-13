@@ -1,0 +1,73 @@
+/* Tablet brekpoint */
+
+@media (max-width: 800px) {
+  
+    .logo {
+        width: 120px;
+    }
+
+    .thankyou-container {
+        padding: 50px 20px !important;
+    }
+
+    /* For Thank you page */
+    .Thankyou .form-container {
+        gap: 20px;
+    }
+
+    .col-100 {
+        width: 100%;
+    }
+
+    .footer-img {
+        justify-content: flex-start !important;
+    }
+}
+
+
+/* Mobile breakpoint */
+
+@media (max-width: 620px) {
+
+    .body-form {
+        height: auto;
+    }
+
+    .tab.formSelect {
+        width: 100%;
+      }
+
+    .custom-title {
+        width: 100%;
+    }
+
+    .footer-img {
+        justify-content: flex-start !important;
+    }
+
+    .footer-bottom-container {
+        justify-content: center !important;
+    }
+
+    .footer-bottom-container p, .footer-bottom-anchor a {
+        font-size: 10px;
+    }
+
+    .social-icons i {
+        font-size: 10px;
+        padding: 5px 8px;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .life-insurance img {
+        height: 200px;
+        object-fit: contain;
+    }
+
+    .footer .btn-quote {
+        width: 100%;
+    }
+}
