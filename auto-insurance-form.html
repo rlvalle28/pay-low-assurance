@@ -80,8 +80,123 @@
     <!-- Form -->
     <form id="multiStepForm">
 
-      <!-- Step 1 -->
-      <div class="step active" id="step1">
+       <!-- Step 1 -->
+       <div class="step active" id="step1">
+        <div class="form-title text-center">
+          <h1>Welcome To The User Details Page!</h1>
+          <p>Please Take A Moment To Confirm That All Your Information Is Accurate And Complete. This Helps Us Process Your Request Quickly And Without Any Issues</p>
+        </div>
+        <div class="custom-dropdown w-100">
+          <button class="john-doe btn btn-light dropdown-toggle w-100 mb-3" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <div class="custom-name d-flex gap-3">
+              <i class="bi bi-person-circle"></i>
+              <div class="c-title d-flex flex-column align-items-start">
+                <h4 class="m-0">John Doe</h4>
+                <span class="m-0">24 years old, Single</span>
+              </div>
+            </div>
+          </button>
+          <!-- Prevent dropdown menu from closing when clicking inside -->
+          <ul class="dropdown-menu custom-form" style="min-width: 100%;" onclick="event.stopPropagation()">
+            <ul class="nav nav-tabs justify-content-evenly" id="myTab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">User Information</button>
+              </li>
+              
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Address</button>
+              </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+              <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                <div class="tab-form p-3">
+                  <div class="form-inputs d-flex flex-wrap justify-content-center align-items-center gap-3">
+                    <div class="mb-3">
+                      <label for="name" class="form-label">First Name<span id="asterisk">*</span></label>
+                      <input type="text" class="form-control" id="fname" required>
+                    </div>          
+                    <div class="mb-3">
+                      <label for="name" class="form-label">Last Name<span id="asterisk">*</span></label>
+                      <input type="text" class="form-control" id="lname" required>
+                    </div>
+                  </div>
+                  <div class="form-inputs d-flex flex-wrap justify-content-center align-items-center gap-3">
+                    <div class="mb-3">
+                      <label for="name" class="form-label">Email Address<span id="asterisk">*</span></label>
+                      <input type="text" class="form-control" id="address" required>
+                    </div>          
+                    <div class="mb-3">
+                      <label for="name" class="form-label">Phone Number (US only)<span id="asterisk">*</span></label>
+                      <input type="text" class="form-control" id="lname" required>
+                    </div>
+                  </div>
+                  <div class="form-inputs d-flex flex-wrap justify-content-center align-items-center gap-3">
+                    <div class="mb-4">
+                      <label for="name" class="form-label">Birthday<span id="asterisk">*</span></label>
+                      <div class="bday-inputs">
+                        <input type="text" class="form-control" id="month" placeholder="Month" required>
+                        <input type="text" class="form-control" id="day" placeholder="Day" required>
+                        <input type="text" class="form-control" id="year" placeholder="Year" required>
+                      </div>
+                    </div>          
+                    <div class="mb-3 formSelect">
+                      <label for="name" class="form-label">Language<span id="asterisk">*</span></label>
+                      <select name="" id="language">
+                        <option value="English">English</option>
+                        <option value="Spanish">Spanish</option>
+                        <option value="Arabic">Arabic</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="tab-btn d-flex justify-content-end">
+                    <button type="button" class="btn btn-primary prev-btn">EDIT</button>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                <div class="tab-form p-3">
+                <div class="form-inputs d-flex flex-wrap justify-content-center align-items-center gap-3">
+                  <div class="mb-3">
+                    <label for="name" class="form-label">Street Address<span id="asterisk">*</span></label>
+                    <input type="email" class="form-control" id="streetAddress" required>
+                  </div>
+                  <div class="mb-3">
+                    <label for="name" class="form-label">City<span id="asterisk">*</span></label>
+                    <input type="text" class="form-control" id="city" required>
+                  </div> 
+                </div>
+                <div class="form-inputs d-flex flex-wrap justify-content-center align-items-center gap-3">
+                  <div class="mb-3 formSelect col-6 col-sm-4">
+                    <label for="name" class="form-label w-50">State<span id="asterisk">*</span></label>
+                    <select name="" id="state">
+                      <option value=""></option>
+                      <option value=""></option>
+                      <option value=""></option>
+                    </select>
+                  </div>          
+                    <div class="mb-3 col-6 col-sm-4">
+                      <label for="name" class="form-label">ZIP Code<span id="asterisk">*</span></label>
+                      <input type="text" class="form-control" id="zipCode" required>
+                    </div>
+                  </div>
+              </div>
+            </div>
+            </div>
+          </ul>
+        </div>
+
+        <div class="d-flex justify-content-center align-items-center w-100 mb-3">
+          <button class="custom-button btn">
+            <i class="bi bi-person-plus-fill"></i> <b>Add Driver</b>
+          </button>
+        </div>
+        <div class="btns d-flex justify-content-end gap-3">
+          <button type="button" class="btn btn-danger next-btn" onclick="nextStep(2)">NEXT</button>
+        </div>
+        </div>
+
+      <!-- Step 2 -->
+      <div class="step" id="step2">
         <div class="form-title text-center">
           <h1>Let’s Start Building Your Savings!</h1>
           <p>Share Some Details About Yourself To Get A More Accurate Quote</p>
@@ -124,14 +239,15 @@
             </select>
           </div>
         </div>
-        <div class="btns d-flex justify-content-end">
-          <button type="button" class="btn btn-danger next-btn" onclick="nextStep(2)">NEXT</button>
+        <div class="btns d-flex justify-content-end gap-3">
+          <button type="button" class="btn btn-primary prev-btn" onclick="prevStep(1)">BACK</button>
+          <button type="button" class="btn btn-danger next-btn" onclick="nextStep(3)">NEXT</button>
         </div>
       </div>
 
 
-      <!-- Step 2 -->
-      <div class="step" id="step2">
+      <!-- Step 3 -->
+      <div class="step" id="step3">
         <div class="form-title text-center">
           <h1>Enter Your Complete Address</h1>
           <p>Please Fill In The Street, City, State, And ZIP For An Accurate Car Insurance Quote And Personalized Service.</p>
@@ -165,13 +281,13 @@
           </div>
         </div>
         <div class="btns d-flex justify-content-end gap-3">
-          <button type="button" class="btn btn-primary prev-btn" onclick="prevStep(1)">BACK</button>
-          <button type="button" class="btn btn-danger next-btn" onclick="nextStep(3)">NEXT</button>
+          <button type="button" class="btn btn-primary prev-btn" onclick="prevStep(2)">BACK</button>
+          <button type="button" class="btn btn-danger next-btn" onclick="nextStep(4)">NEXT</button>
         </div>
       </div>
 
-      <!-- Step 3 -->
-      <div class="step" id="step3">
+      <!-- Step 4 -->
+      <div class="step" id="step4">
         <div class="form-title text-center">
           <h1>Select Your Driver's License Status</h1>
           <p>Please Select One Of The Following Options To Get The Best Option For Your Car Insurance. We Have Savings For Everyone!</p>
@@ -193,13 +309,13 @@
           <label for="other" class="form-label m-0">Other</label>
         </div>
         <div class="btns d-flex justify-content-end gap-3">
-          <button type="button" class="btn btn-primary prev-btn" onclick="prevStep(2)">BACK</button>
-          <button type="button" class="btn btn-danger next-btn" onclick="nextStep(4)">NEXT</button>
+          <button type="button" class="btn btn-primary prev-btn" onclick="prevStep(3)">BACK</button>
+          <button type="button" class="btn btn-danger next-btn" onclick="nextStep(5)">NEXT</button>
         </div>
       </div>
 
-      <!-- Step 4 -->
-      <div class="step" id="step4">
+      <!-- Step 5 -->
+      <div class="step" id="step5">
         <div class="form-title text-center">
           <h1>What Is Your Gender?</h1>
           <p>Please Select The Option That Applies To You To Help Us Provide An Accurate Car Insurance Quote.</p>
@@ -217,13 +333,13 @@
           <label for="address" class="form-label m-0">Non-Binary</label>
         </div>
         <div class="btns d-flex justify-content-end gap-3">
-          <button type="button" class="btn btn-primary prev-btn" onclick="prevStep(3)">BACK</button>
-          <button type="button" class="btn btn-danger next-btn" onclick="nextStep(5)">NEXT</button>
+          <button type="button" class="btn btn-primary prev-btn" onclick="prevStep(4)">BACK</button>
+          <button type="button" class="btn btn-danger next-btn" onclick="nextStep(6)">NEXT</button>
         </div>
       </div>
 
-       <!-- Step 5 -->
-       <div class="step" id="step5">
+       <!-- Step 6 -->
+       <div class="step" id="step6">
         <div class="form-title text-center">
           <h1>What Is Your Marital Status?</h1>
           <p>Sharing The Correct Answer Helps Us Find More Options For You.</p>
@@ -249,16 +365,16 @@
           <label for="other" class="form-label m-0">Other</label>
         </div>
         <div class="btns d-flex justify-content-end gap-3">
-          <button type="button" class="btn btn-primary prev-btn" onclick="prevStep(4)">BACK</button>
-          <button type="button" class="btn btn-danger next-btn" onclick="nextStep(6)">NEXT</button>
+          <button type="button" class="btn btn-primary prev-btn" onclick="prevStep(5)">BACK</button>
+          <button type="button" class="btn btn-danger next-btn" onclick="nextStep(7)">NEXT</button>
         </div>
       </div>
 
-       <!-- Step 6 -->
-       <div class="step" id="step6">
+       <!-- Step 7 -->
+       <div class="step" id="step7">
         <div class="form-title text-center">
-          <h1>Mandatory Liability Coverage</h1>
-          <p>This Coverage Is Required By Law. Below, We Explain In More Detail.</p>
+          <h1>State Minimum Liability Coverage</h1>
+          <p>Basic coverage mandated by law, ensuring protection for other people's property.</p>
         </div>
         <div class="custom-radio d-flex justify-content-start align-center gap-3">
           <input type="radio" class="form-control-radio" id="liability" required>
@@ -270,127 +386,22 @@
             <li>Property Damage: $10,000 Per Accident Means Your Insurance Will Cover Up To $10,000 To Repair Or Replace Someone Else's Property (Such As Their Car, Bike, Etc.) That You Damage In An Accident.</li>
           </ul>
         </div>
+        <div class="custom-radio d-flex justify-content-start align-center gap-3">
+          <input type="radio" class="form-control-radio" id="liability" required>
+          <label for="liability" class="form-label m-0">Comprehensive & Collision Coverage</label>
+        </div>
+        <div class="liablity mb-3 p-3">
+          <ul>
+            <li>Expanded coverage that safeguards both others and your own property.</li>
+          </ul>
+        </div>
         <div class="btns d-flex justify-content-end gap-3">
-          <button type="button" class="btn btn-primary prev-btn" onclick="prevStep(5)">BACK</button>
-          <button type="button" class="btn btn-danger next-btn" onclick="nextStep(7)">NEXT</button>
+          <button type="button" class="btn btn-primary prev-btn" onclick="prevStep(6)">BACK</button>
+          <button type="button" class="btn btn-danger next-btn" onclick="nextStep(8)">NEXT</button>
         </div>
       </div>
 
-      <!-- Step 7 -->
-          <div class="step" id="step7">
-          <div class="form-title text-center">
-            <h1>Welcome To The User Details Page!</h1>
-            <p>Please Take A Moment To Confirm That All Your Information Is Accurate And Complete. This Helps Us Process Your Request Quickly And Without Any Issues</p>
-          </div>
-          <div class="custom-dropdown w-100">
-            <button class="john-doe btn btn-light dropdown-toggle w-100 mb-3" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-              <div class="custom-name d-flex gap-3">
-                <i class="bi bi-person-circle"></i>
-                <div class="c-title d-flex flex-column align-items-start">
-                  <h4 class="m-0">John Doe</h4>
-                  <span class="m-0">24 years old, Single</span>
-                </div>
-              </div>
-            </button>
-            <!-- Prevent dropdown menu from closing when clicking inside -->
-            <ul class="dropdown-menu custom-form" style="min-width: 100%;" onclick="event.stopPropagation()">
-              <ul class="nav nav-tabs justify-content-evenly" id="myTab" role="tablist">
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">User Information</button>
-                </li>
-                
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Address</button>
-                </li>
-              </ul>
-              <div class="tab-content" id="myTabContent">
-                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                  <div class="tab-form p-3">
-                    <div class="form-inputs d-flex flex-wrap justify-content-center align-items-center gap-3">
-                      <div class="mb-3">
-                        <label for="name" class="form-label">First Name<span id="asterisk">*</span></label>
-                        <input type="text" class="form-control" id="fname" required>
-                      </div>          
-                      <div class="mb-3">
-                        <label for="name" class="form-label">Last Name<span id="asterisk">*</span></label>
-                        <input type="text" class="form-control" id="lname" required>
-                      </div>
-                    </div>
-                    <div class="form-inputs d-flex flex-wrap justify-content-center align-items-center gap-3">
-                      <div class="mb-3">
-                        <label for="name" class="form-label">Email Address<span id="asterisk">*</span></label>
-                        <input type="text" class="form-control" id="address" required>
-                      </div>          
-                      <div class="mb-3">
-                        <label for="name" class="form-label">Phone Number (US only)<span id="asterisk">*</span></label>
-                        <input type="text" class="form-control" id="lname" required>
-                      </div>
-                    </div>
-                    <div class="form-inputs d-flex flex-wrap justify-content-center align-items-center gap-3">
-                      <div class="mb-4">
-                        <label for="name" class="form-label">Birthday<span id="asterisk">*</span></label>
-                        <div class="bday-inputs">
-                          <input type="text" class="form-control" id="month" placeholder="Month" required>
-                          <input type="text" class="form-control" id="day" placeholder="Day" required>
-                          <input type="text" class="form-control" id="year" placeholder="Year" required>
-                        </div>
-                      </div>          
-                      <div class="mb-3 formSelect">
-                        <label for="name" class="form-label">Language<span id="asterisk">*</span></label>
-                        <select name="" id="language">
-                          <option value="English">English</option>
-                          <option value="Spanish">Spanish</option>
-                          <option value="Arabic">Arabic</option>
-                        </select>
-                      </div>
-                    </div>
-                    <div class="tab-btn d-flex justify-content-end">
-                      <button type="button" class="btn btn-primary prev-btn">EDIT</button>
-                    </div>
-                  </div>
-                </div>
-                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                  <div class="tab-form p-3">
-                  <div class="form-inputs d-flex flex-wrap justify-content-center align-items-center gap-3">
-                    <div class="mb-3">
-                      <label for="name" class="form-label">Street Address<span id="asterisk">*</span></label>
-                      <input type="email" class="form-control" id="streetAddress" required>
-                    </div>
-                    <div class="mb-3">
-                      <label for="name" class="form-label">City<span id="asterisk">*</span></label>
-                      <input type="text" class="form-control" id="city" required>
-                    </div> 
-                  </div>
-                  <div class="form-inputs d-flex flex-wrap justify-content-center align-items-center gap-3">
-                    <div class="mb-3 formSelect col-6 col-sm-4">
-                      <label for="name" class="form-label w-50">State<span id="asterisk">*</span></label>
-                      <select name="" id="state">
-                        <option value=""></option>
-                        <option value=""></option>
-                        <option value=""></option>
-                      </select>
-                    </div>          
-                      <div class="mb-3 col-6 col-sm-4">
-                        <label for="name" class="form-label">ZIP Code<span id="asterisk">*</span></label>
-                        <input type="text" class="form-control" id="zipCode" required>
-                      </div>
-                    </div>
-                </div>
-              </div>
-              </div>
-            </ul>
-          </div>
-
-          <div class="d-flex justify-content-center align-items-center w-100 mb-3">
-            <button class="custom-button btn">
-              <i class="bi bi-person-plus-fill"></i> <b>Add Driver</b>
-            </button>
-          </div>
-          <div class="btns d-flex justify-content-end gap-3">
-            <button type="button" class="btn btn-primary prev-btn" onclick="prevStep(6)">BACK</button>
-            <button type="button" class="btn btn-danger next-btn" onclick="nextStep(8)">NEXT</button>
-          </div>
-          </div>
+     
 
            <!-- Step 8 -->
           <div class="step" id="step8">
