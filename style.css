@@ -72,6 +72,49 @@ body {
   /* background: transparent; */
 }
 
+
+
+.previewSection{
+  width: 30%;
+  position: absolute;
+  top: 40px;
+  right: -300px;
+}
+
+.previewDetails h4{
+  font-family: 'Outfit';
+  font-size: 18px;
+  font-weight: 500;
+  color:#002b87;
+}
+
+.userInfo p{
+  font-family: 'Outfit';
+  font-size: 12px!important;
+  text-align: left!important;
+  margin: 0px;
+}
+
+.previewDetails{
+  position: relative;
+}
+
+.previewDetails .editBtn{
+  right: 0!important;
+}
+
+.previewDetails .editBtn p{
+  font-size: 13px!important;
+}
+
+.previewDetails .editBtn i{
+  font-size: 15px!important;
+}
+
+.checkIcon i{
+  color: #13BE00;
+}
+
 #multiStepForm h1 ,.dropdown-toggle::after {
   color: #CD0118;
 }
@@ -111,11 +154,119 @@ body {
   max-width: 1000px;
   width: 100%;
   height: auto;
+  padding:50px 20px;
+  position: relative;
+  }
+
+
+  .body-form h6{
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  .body-form p{
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+  }
+
+
+  .form-inputs p{
+    font-family: 'Outfit';
+    font-size: 14px;
+    text-align: left;
+    margin-top: 20px;
+  }
+
+  .form-inputs .frmInput{
+    width: 50%!important;
+  }
+
+
+  .userNumber{
+    background-color: #fff;
+    padding: 5px 15px;
+    border-radius: 5px;
+  }
+
+  .userNumber p{
+    font-size: 18px;
+    font-family: "Outfit";
+    font-weight: 500;
+    color:#CD0118;
+    line-height: 1em!important;
+    margin-bottom: 0;
+  }
+
+  .userNumber i{
+    font-size: 25px;
+    color:#002b87;
+  }
+
+
+
+  .userSection{
+    width: 100%;
+    padding:25px;
+    background-color: #fff;
+    border-radius: 10px;
+    border:1px solid #193A99;
+    position: relative;
+  }
+
+  .closeIcon{
+    position: absolute;
+    top:18px;
+    right: 20px;
+    color:#CD0118;
+    font-weight: 600;
+  }
+
+  .editBtn{
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    cursor: pointer;
+  }
+
+  .editBtn i{
+    font-size: 18px;
+  }
+
+  .editBtn p {
+    font-size: 18px;
+    font-family: 'Outfit';
+    color:#002b87;
+    margin: 0px;
+  }
+
+  .userAvatar i{
+    font-size: 55px;
+    color:#002b87;
+  }
+
+  .userDestail h2{
+    font-size: 30px;
+    font-family: 'Outfit';
+    color:#002b87;
+    margin: 0px;
+    text-align: left;
+  }
+
+  .userDestail p{
+    font-size: 18px;
+    font-family: 'Outfit';
+    color:#000;
+    margin: 0px;
+    text-align: left;
   }
 
  .progress-container {
     position: relative;
   }
+
+
 
   .progress-bar {
     width: 0%;
@@ -136,6 +287,7 @@ body {
 
   .step {
     display: none;
+    position: relative;
   }
 
   .step.active {
@@ -154,9 +306,51 @@ body {
 
 .bday-inputs {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   gap: 10px;
   width: 100%;
+}
+
+
+.frmInput .bday-inputs{
+  flex: auto;
+  flex-grow:unset
+}
+
+select{
+  font-family:'Outfit'!important;
+}
+
+.frmInput .bday-inputs input{
+  width: 32%!important;
+  flex-grow: inherit;
+  flex-wrap: nowrap!important;
+}
+
+.btn-toggle {
+  border-radius: 5px;
+  border: 1px solid #e6e6e6;
+  overflow: hidden;
+}
+.btn-toggle label {
+  width: 80px; /* Adjust button width */
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.btn-toggle label:hover{
+  border-color: #e6e6e6;
+}
+
+
+.btn-check:checked + label {
+  background-color: #193A99 !important;
+  color: white !important;
+}
+.btn-check:not(:checked) + label {
+  background-color: white !important;
+  color: #193A99 !important;
+  border: 1px solid #e6e6e6;
 }
 
 .bday-inputs input {

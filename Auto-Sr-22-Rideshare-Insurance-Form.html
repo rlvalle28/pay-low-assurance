@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SR-22 Insurance Form</title>
+  <!-- Bootstrap CSS -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="custom-responsive.css">
+</head>
+
+
+<body>
+
+    <!-- Top Bar -->
+    <div class="top-bar text-center text-sm-start">
+        <div class="container d-flex justify-content-between align-items-center">
+            <span><img src="./assets/1.webp" style="width: 15px; aspect-ratio: 3/4;" alt=""> | 619-736-1313 | Call For Details & To Schedule Your Service Today!</span>
+            <div>
+                <select name="language" id="languange">
+                    <option value="English">EN</option>
+                    <option value="British">BR</option>
+                    <option value="Arabic">AR</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <header class="navbar navbar-expand-lg sticky-top bg-primary navbar-light bg-light p-3">
+        <div class="container">
+            <a class="navbar-brand" href="https://riftofheroes.info/programming/PayLowAssurance/">
+                <img src="./assets/logo.webp" alt="" class="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto me-3 mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="insuranceDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Insurance Services
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="insuranceDropdown">
+                            <li><a class="dropdown-item" href="https://riftofheroes.info/programming/PayLowAssurance/car-insurance-quotes-to-fit-any-budget/">Car Insurance Quotes To Fit Any Budget</a></li>
+                            <li><a class="dropdown-item" href="https://riftofheroes.info/programming/PayLowAssurance/sr-22-insurance/">SR-22 Insurance</a></li>
+                            <li><a class="dropdown-item" href="https://riftofheroes.info/programming/PayLowAssurance/rideshare-insurance/">Rideshare Insurance</a></li>
+                            <li><a class="dropdown-item" href="https://riftofheroes.info/programming/PayLowAssurance/rv-mobile-home-insurance/">RV/Mobile Home Insurance</a></li>
+                            <li><a class="dropdown-item" href="https://riftofheroes.info/programming/PayLowAssurance/homeowners-insurance/">Homeowners Insurance</a></li>
+                            <li><a class="dropdown-item" href="https://riftofheroes.info/programming/PayLowAssurance/renters-insurance/">Renters Insurance</a></li>
+                            <li><a class="dropdown-item" href="https://riftofheroes.info/programming/PayLowAssurance/life-insurance/">Life Insurance</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://riftofheroes.info/programming/PayLowAssurance/careers/">Careers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://riftofheroes.info/programming/PayLowAssurance/blog/">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Google Reviews</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://riftofheroes.info/programming/PayLowAssurance/contact-us/">Contact Us</a>
+                    </li>
+                </ul>
+                <a href="#" class="btn btn-quote">Get a Quote Now!</a>
+            </div>
+        </div>
+    </header>
+    <!-- !Top Bar -->
+
+
+
+
+
+
+    <section class="container-fluid">
+        <div class="container body-form">
+
+
+            <!-- <div class="progress-container mb-4">
+                <div class="progress">
+                  <div class="progress-bar progress-bar bg-primary" role="progressbar" style="width: 0%" id="progressBar"></div>
+                </div>
+                <div class="progress-percentage" id="progressPercentage">0%</div>
+            </div> -->
+
+
+            <form id="multiStepForm">
+
+                <!-- Step 1 -->
+                <div class="step active" id="step1">
+
+                    <h6>Get Your Quote In 3 Easy Steps</h6>
+                    <p>We Need Your Basic Details To Get Started</p>
+
+                    <hr>
+
+                    <div class="tab-form p-3">
+                        <div class="form-inputs d-flex flex-wrap justify-content-center align-items-center gap-3">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">First Name<span id="asterisk">*</span></label>
+                                <input type="text" class="form-control" id="fname" required>
+                            </div>          
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Last Name<span id="asterisk">*</span></label>
+                                <input type="text" class="form-control" id="lname" required>
+                            </div>
+                        </div>
+                        <div class="form-inputs d-flex flex-wrap align-items-center gap-2 mb-4">
+                            <label for="name" class="form-label m-0">Date of Birth<span id="asterisk">*</span></label>
+                            <input type="date" class="form-control w-100" id="date" placeholder="Month" required>
+                        </div>
+                        <div class="form-inputs d-flex flex-wrap align-items-center gap-2 mb-4">
+                            <label for="name" class="form-label">Mobile Phone Number<span id="asterisk">*</span></label>
+                            <input type="text" class="form-control" id="pNumber" required>
+                        </div>
+                        <div class="form-inputs d-flex flex-wrap align-items-center gap-2">
+                            <label for="name" class="form-label">Email Address<span id="asterisk">*</span></label>
+                            <input type="text" class="form-control" id="address" required>        
+                        </div>
+
+                        <div class="form-inputs d-flex align-items-center gap-2">
+                            <p>By Clicking Continue, I Agree To The Pay Low Insurance Privacy Policy And Terms Of Use , And I Consent To Pay Low Insurance Or Their Successors Contacting Me With Offers About Their Services. I Agree That Such Contact May Occur Via Automated System Or Pre-Recorded Message And I Understand Giving Consent To Contact Is Not Required For Any Purchase. I Also Give My Express Written Consent To Be Contacted At The Mobile Phone Number Provided Above For Marketing Purposes By Call, Text, Or Automated Telephone Dialing System, Including With An Artificial Or Prerecorded Voice, Which May Leave A Message. Message And Data Rate May Apply. Message Frequency Varies. Text HELP For Help And STOP To Cancel At Any Time. I Understand That I Am Providing This Consent Even If My Telephone Number Is Currently Listed On A Federal, State, Internal, Or Corporate Do-Not-Call List. I Understand That I Do Not Have To Agree To Receive These Types Of Calls Or Text Messages As A Condition Of Purchasing Any Goods Or Services. This Site Is Protected By Recaptcha And The Google Privacy Policy And Terms Of Use Apply."</p>
+                        </div>
+                        
+                    </div>
+            
+                    <div class="btns d-flex justify-content-end gap-3">
+                        <button type="button" class="btn btn-danger next-btn" onclick="nextStep(2)">Continue</button>
+                    </div>
+
+                </div>
+         
+               <!-- Step 2 -->
+                <div class="step" id="step2">
+
+                    <div class="d-flex align-items-center gap-3 mb-3">
+                        <div class="userNumber align-items-center d-flex gap-3">
+                            <p>1</p>
+                            <i class="bi bi-person-circle"></i>
+                        </div>
+                        <div class="userNumber align-items-center d-flex gap-3">
+                            <p>0</p>
+                            <i class="bi bi-car-front-fill"></i>
+                        </div>
+                    </div>
+
+                    <h6 style="text-align: left;">Drivers On Your Policy*</h6>
+
+                    <hr>
+
+
+                    <h6 class="mt-5" style="text-align: left; color: #002b87; font-size: 30px;">Drivers On Your Policy*</h6>
+                
+
+                    <!-- Button trigger modal -->
+                    <div class="userSection" data-bs-toggle="modal" data-bs-target="#exampleModal">
+
+                        <i class="closeIcon bi bi-x-circle"></i>
+
+                        <div class="userAvDestail d-flex align-items-center gap-3">
+                            <div class="userAvatar">
+                                <i class="bi bi-person-circle"></i>
+                            </div>
+                            <div class="userDestail">
+                                <h2>John Doe</h2>
+                                <p>Applicant</p>
+                            </div>
+                        </div>
+
+                        <div class="editBtn d-flex align-items-center gap-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <i class="bi bi-pencil-square"></i>
+                            <p>Edit</p>
+                        </div>
+                    </div>
+                    
+                    
+
+
+                    <div class="btns d-flex justify-content-end gap-3 mt-5">
+                        <button type="button" class="btn btn-primary prev-btn" onclick="prevStep(1)">BACK</button>
+                        <button type="button" class="btn btn-danger next-btn" onclick="nextStep(3)">NEXT</button>
+                    </div>
+                </div>
+         
+         
+                 <!-- Step 3 -->
+                <div class="step" id="step3">
+                    <div class="form-title text-center mb-4">
+                    <h1>Choose Your Vehicle Make</h1>
+                    </div>
+         
+                         <div class="row justify-content-center mb-4 w-100">
+                           <div class="col-md-12 searchBox-container">
+                               <input type="text" id="searchBox" class="form-control" placeholder="Search Model">
+                               <i class="bi bi-search"></i>
+                           </div>
+                         </div>
+         
+                         <div class="row d-flex gap-3 justify-content-center m-3" id="brandContainer">
+                                   <!-- Brand Item -->
+                                   <div class="col-md-3 brand-item" data-name="ac">
+                                       <img src="./assets/model/1.webp" alt="ac" class="img-fluid">
+                                   </div>
+                                   <div class="col-md-3 brand-item" data-name="acura">
+                                       <img src="./assets/model/2.webp" alt="acura" class="img-fluid">
+                                   </div>
+                                   <div class="col-md-3 brand-item" data-name="alfa romero">
+                                     <img src="./assets/model/3.webp" alt="alfa romero" class="img-fluid">
+                                   </div>
+                                   <div class="col-md-3 brand-item" data-name="alvis">
+                                     <img src="./assets/model/4.webp" alt="alvis" class="img-fluid">
+                                   </div>
+                                   <div class="col-md-3 brand-item" data-name="audi">
+                                     <img src="./assets/model/5.webp" alt="audi" class="img-fluid">
+                                   </div>
+                                   <div class="col-md-3 brand-item" data-name="alfa romero">
+                                     <img src="./assets/model/6.webp" alt="alfa romero" class="img-fluid">
+                                 </div>
+                                 <div class="col-md-3 brand-item" data-name="bmw">
+                                   <img src="./assets/model/7.webp" alt="bmw" class="img-fluid">
+                               </div>
+                               <div class="col-md-3 brand-item" data-name="bently">
+                                   <img src="./assets/model/8.webp" alt="bently" class="img-fluid">
+                               </div>
+                               <div class="col-md-3 brand-item" data-name="bugatti">
+                                 <img src="./assets/model/9.webp" alt="bugatti" class="img-fluid">
+                               </div>
+                               <div class="col-md-3 brand-item" data-name="buick">
+                                 <img src="./assets/model/10.webp" alt="buick" class="img-fluid">
+                               </div>
+                               <div class="col-md-3 brand-item" data-name="cadilac">
+                                 <img src="./assets/model/11.webp" alt="cadilac" class="img-fluid">
+                               </div>
+                               <div class="col-md-3 brand-item" data-name="chevolet">
+                                 <img src="./assets/model/12.webp" alt="chevolet" class="img-fluid">
+                               </div>
+                               <div class="col-md-3 brand-item" data-name="ferarri">
+                                 <img src="./assets/model/13.webp" alt="ferarri" class="img-fluid">
+                               </div>
+                               <div class="col-md-3 brand-item" data-name="fiat">
+                                 <img src="./assets/model/14.webp" alt="fiat" class="img-fluid">
+                             </div>
+                             <div class="col-md-3 brand-item" data-name="ford">
+                               <img src="./assets/model/15.webp" alt="ford" class="img-fluid">
+                             </div>
+                         </div>
+                 
+                         <div class="btns d-flex justify-content-end gap-3">
+                           <button type="button" class="btn btn-primary prev-btn" onclick="prevStep(2)">BACK</button>
+                           <button type="button" class="btn btn-danger next-btn" onclick="nextStep(4)">NEXT</button>
+                         </div>
+                   </div>
+         
+                    <!-- Step 4 -->
+                    <div class="step" id="step4">
+                     <div class="form-title text-center mb-4">
+                       <h1>Choose Your Vehicle Model</h1>
+                     </div>
+         
+                     <div class="row justify-content-center mb-4 w-100">
+                       <div class="col-md-12 searchBox-container">
+                           <input type="text" id="brandNameBox" class="form-control" placeholder="Search Model">
+                           <i class="bi bi-search"></i>
+                       </div>
+                     </div>
+         
+                     <div class="row d-flex gap-3 justify-content-center m-3" id="brandContainer">
+                       <!-- Brand Item -->
+                       <div class="col-md-5 brand-item brandName-item" data-name="1-series">
+                           <p class="m-0"><b>1-Series</b></p>
+                       </div>
+                       <div class="col-md-5 brand-item brandName-item" data-name="1500">
+                         <p class="m-0"><b>1500</b></p>
+                       </div>
+                       <div class="col-md-5 brand-item brandName-item" data-name="1500, 1600, 1800, 1800TI">
+                         <p class="m-0"><b>1500, 1600, 1800, 1800TI</b></p>
+                       </div>
+                       <div class="col-md-5 brand-item brandName-item" data-name="1500, 1800">
+                         <p class="m-0"><b>1500, 1800</b></p>
+                       </div>
+                       <div class="col-md-5 brand-item brandName-item" data-name="1-series">
+                         <p class="m-0"><b>1-Series</b></p>
+                     </div>
+                     <div class="col-md-5 brand-item brandName-item" data-name="1500">
+                       <p class="m-0"><b>1500</b></p>
+                     </div>
+                     <div class="col-md-5 brand-item brandName-item" data-name="1600, 1600-2, 1600TI, 1800, 1800TI, 2000, 2000C, 2000CS, 2000TI">
+                       <p class="m-0"><b>1600, 1600-2, 1600TI, 1800, 1800TI, 2000, 2000C, 2000CS, 2000TI</b></p>
+                     </div>
+                     <div class="col-md-5 brand-item brandName-item" data-name="1600, 1600-2, 1600TI, 1800, 1800TI, 2000, 2000C, 2000CS, 2000TI">
+                       <p class="m-0"><b>1600, 1600-2, 1600TI, 1800, 1800TI, 2000, 2000C, 2000CS, 2000TI</b></p>
+                     </div>
+                     <div class="col-md-5 brand-item brandName-item" data-name="1600, 1600GT, 1600TI, 1800, 2000, 2000C, 2000CS, 2000TI">
+                       <p class="m-0"><b>1600, 1600GT, 1600TI, 1800, 2000, 2000C, 2000CS, 2000TI</b></p>
+                     </div>
+                     <div class="col-md-5 brand-item brandName-item" data-name="1600, 1800, 1800TI, 2000C, 2000CS">
+                       <p class="m-0"><b>1600, 1800, 1800TI, 2000C, 2000CS</b></p>
+                     </div>
+                     <div class="col-md-5 brand-item brandName-item" data-name="1600, 1800, 2000, 2000C, 2000CS">
+                       <p class="m-0"><b>1600, 1800, 2000, 2000C, 2000CS</b></p>
+                     </div>
+                     <div class="col-md-5 brand-item brandName-item" data-name="1600, 2000">
+                       <p class="m-0"><b>1600, 2000</b></p>
+                     </div>
+                     <div class="col-md-5 brand-item brandName-item" data-name="1600, 2000, 2000 Touring, 2000TII">
+                       <p class="m-0"><b>1600, 2000, 2000 Touring, 2000TII</b></p>
+                     </div>
+                     <div class="col-md-5 brand-item brandName-item" data-name="2-Series">
+                       <p class="m-0"><b>2-Series</b></p>
+                     </div>
+                   
+                     </div>
+             
+                     <div class="btns d-flex justify-content-end gap-3">
+                       <button type="button" class="btn btn-primary prev-btn" onclick="prevStep(3)">BACK</button>
+                       <button type="button" class="btn btn-danger next-btn" onclick="nextStep(5)">NEXT</button>
+                     </div>
+                 </div>
+         
+                 <!-- Step 5 -->
+                 <div class="step" id="step5">
+                   <div class="form-title text-center mb-4">
+                     <h1>Choose Your Vehicle Year</h1>
+                   </div>
+         
+                   <div class="row justify-content-center mb-4 w-100">
+                     <div class="col-md-12 searchBox-container">
+                         <input type="text" id="YearNameBox" class="form-control" placeholder="Search Year">
+                         <i class="bi bi-search"></i>
+                     </div>
+                   </div>
+         
+                         <div class="row d-flex gap-3 justify-content-center m-3" id="brandContainer">
+                                   <!-- Brand Item -->
+                                   <div class="col-md-5 brand-item YearName-item" data-name="2013">
+                                       <p class="m-0"><b>2013</b></p>
+                                   </div>
+                                   <div class="col-md-5 brand-item YearName-item" data-name="2012">
+                                     <p class="m-0"><b>2012</b></p>
+                                   </div>
+                                   <div class="col-md-5 brand-item YearName-item" data-name="2011">
+                                     <p class="m-0"><b>2011</b></p>
+                                   </div>
+                                   <div class="col-md-5 brand-item YearName-item" data-name="2010">
+                                     <p class="m-0"><b>2010</b></p>
+                                   </div>
+                                   <div class="col-md-5 brand-item YearName-item" data-name="2009">
+                                     <p class="m-0"><b>2009</b></p>
+                                 </div>
+                                 <div class="col-md-5 brand-item YearName-item" data-name="2008">
+                                   <p class="m-0"><b>2008</b></p>
+                                 </div>
+                               
+                         </div>
+           
+                   <div class="btns d-flex justify-content-end gap-3">
+                     <button type="button" class="btn btn-primary prev-btn" onclick="prevStep(4)">BACK</button>
+                     <button type="button" class="btn btn-danger next-btn" onclick="nextStep(6)">NEXT</button>
+                   </div>
+               </div>
+         
+               <!-- Step 6 -->
+               <div class="step" id="step6">
+                 <div class="form-title text-center">
+                   <h1>Check Your Vehicle Quote!</h1>
+                   <p>Explore The Options Selected And Ensure The Best Coverage For Your Car.</p>
+                 </div>
+                 <div class="custom-dropdown w-100">
+                   <button class="john-doe btn btn-light dropdown-toggle w-100 mb-3" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                     <div class="custom-name d-flex gap-3">
+                       <img src="./assets/bmw.webp" alt="">
+                       <div class="c-title d-flex flex-column align-items-start">
+                         <h4 class="m-0">BMW 1-Series 2012</h4>
+                         <span class="m-0">Description for the vehicle</span>
+                       </div>
+                     </div>
+                   </button>
+                   <!-- Prevent dropdown menu from closing when clicking inside -->
+                   <ul class="dropdown-menu custom-form" style="min-width: 100%;" onclick="event.stopPropagation()">
+                     <div class="bmw-container p-3 d-flex flex-wrap gap-3">
+                       <div class="container col-sm-4">
+                         <h5>Details:</h5>
+                         <p>Engine: ---</p>
+                         <p>VIN Number: XXXXXXXXXXXXXXXXX</p>
+                         <p>Fuel Type: ---</p>
+                         <p>Transmission: ---</p>
+                         <p>Seating Capacity: ---</p>
+                       </div>
+                       <div class="container col-sm-4">
+                         <h5>Details:</h5>
+                         <p>Car Accidents: ---</p>
+                         <p>Car Not Listed: ---</p>
+                         <p>Car Use In Business Or Occupation: ---</p>
+                       </div>
+                     </div>
+         
+                   </ul>
+                 </div>
+         
+                 <div class="d-flex justify-content-center align-items-center w-100 mb-3">
+                   <button class="custom-button btn">
+                     <i class="bi bi-plus-lg"></i> <b>Add Another Car</b>
+                   </button>
+                 </div>
+                 <div class="btns d-flex justify-content-end gap-3">
+                   <button type="button" class="btn btn-primary prev-btn" onclick="prevStep(5)">BACK</button>
+                   <button type="button" class="btn btn-danger next-btn">NEXT</button>
+                   <!-- <button type="submit" class="btn btn-success">Submit</button> -->
+                 </div>
+                 </div>
+                
+         
+               <!-- Form -->
+            </form>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h1 class="modal-title fs-5" style="color:#002b87;" id="exampleModalLabel">Add Driver</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="tab-form p-3">
+                            <div class="form-inputs d-flex flex-wrap justify-content-center align-items-center gap-3">
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">First Name<span id="asterisk">*</span></label>
+                                    <input type="text" class="form-control" id="fname" required>
+                                </div>          
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">Last Name<span id="asterisk">*</span></label>
+                                    <input type="text" class="form-control" id="lname" required>
+                                </div>
+                            </div>
+                            <div class="form-inputs d-flex flex-wrap align-items-center gap-2 mb-4">
+                                <label for="name" class="form-label m-0">Date of Birth<span id="asterisk">*</span></label>
+                                <input type="date" class="form-control w-100" id="date" placeholder="Month" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="w-100 d-flex justify-content-between gap-3">
+                            <button type="button" class="btn btn-danger next-btn" >Cancel</button>
+                            <button type="button" class="btn btn-primary prev-btn" >Save</button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+
+
+            <!-- Modal -->
+            <div class="modal fade" id="editMobal" tabindex="-1" aria-labelledby="editMobal" aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h1 class="modal-title fs-5" style="color:#002b87;" id="editMobal">Edit Driver</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="tab-form p-3">
+                            <div class="form-inputs d-flex flex-wrap justify-content-center align-items-center gap-3">
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">First Name<span id="asterisk">*</span></label>
+                                    <input type="text" class="form-control" value="John" id="fname" required>
+                                </div>          
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">Last Name<span id="asterisk">*</span></label>
+                                    <input type="text" class="form-control" value="Doe" id="lname" required>
+                                </div>
+                            </div>
+                            <div class="form-inputs d-flex flex-wrap align-items-center gap-2 mb-4">
+                                <label for="name" class="form-label m-0">Date of Birth<span id="asterisk">*</span></label>
+                                <input type="date" class="form-control w-100" id="date" value="02/0/1999" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="w-100 d-flex justify-content-between gap-3">
+                            <button type="button" class="btn btn-danger next-btn" >Cancel</button>
+                            <button type="button" class="btn btn-primary prev-btn" >Save</button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <form class="previewSection">
+                <div class="previewItem d-flex align-items-start gap-3">
+                    <div class="dush">-</div>
+                    <div class="previewDetails">
+                        <h4>Your Contact Details</h4>
+                        <div class="userInfo">
+                            <p>John Doe</p>
+                            <p>10001</p>
+                            <p>Natz.Bravegg@Gmail.Com</p>
+                        </div>
+                        <div class="editBtn d-flex align-items-center gap-1" data-bs-toggle="modal" data-bs-target="#editMobal">
+                            <i class="bi bi-pencil-square"></i>
+                            <p>Edit</p>
+                        </div>
+                    </div>
+                    <div class="checkIcon">
+                        <i class="bi bi-check-circle-fill"></i>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+  <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 d-flex flex-column align-items-start gap-3">
+                <div class="footer-nav">
+                    <!-- <a href="" class="me-2">INSURANCE SERVICE</a> -->
+                    <a href="https://riftofheroes.info/programming/PayLowAssurance/careers/" class="me-2">CAREERS</a>
+                    <a href="https://riftofheroes.info/programming/PayLowAssurance/blog/" class="me-2">BLOG</a>
+                    <a href="" class="me-2">GOOGLE REVIEWS</a>
+                    <a href="https://riftofheroes.info/programming/PayLowAssurance/contact-us/" class="me-2">CONTACT US</a>
+                </div>
+                    <h1>Contact Us Today!</h1>
+                    <p class="custom-title">We’ve served generations. Protecting what’s most important. Let us do the same for you.</p>
+                    <a href="#" class="btn btn-quote">Get a Quote Now!</a>
+                    <div class="custom-text d-flex flex-wrap align-items-center justify-start gap-3 mb-4 w-100">
+                    <p class="m-0">By Continuing To Use Our Website, You Agree To Our Cookie Policy And Privacy Policy.</p>
+                    <a href="#">Accept</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 d-flex flex-column align-items-start">
+                    <ul class="list-unstyled">
+                        <li class="mb-4 d-flex">
+                            <a href="#"><img src="./assets/phone.webp" alt="" class="me-4"></a>
+                            <div class="d-flex flex-column">
+                            <h4 class="mb-1">Phone:</h4>
+                            <span>619-736-1313</span>
+                            </div>
+                        </li> 
+                        <li class="mb-4 d-flex">
+                        <a href="#"><img src="./assets/map.webp" alt="" class="me-4"></a>
+                        <div class="d-flex flex-column">
+                            <h4 class="mb-1">Address:</h4>
+                            <span>595 Fletcher Pkwy, El Cajon, CA 92020</span>
+                        </div>
+                        </li>
+                        <li class="mb-4 d-flex">
+                        <a href="#"><img src="./assets/email.webp" alt="" class="me-4"></a>
+                        <div class="d-flex flex-column">
+                            <h4 class="mb-1">Email:</h4>
+                            <span>sales@paylowinsurance.com</span>
+                        </div>
+                        </li>
+                    </ul>
+                    <!-- <a href="#" class="btn btn-quote">Get a Quote Now!</a> -->
+                    <div class="footer-img d-flex justify-content-end mb-4">
+                    <img src="./assets/logo(2).webp" class="logo" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom d-flex justify-content-center">
+        <div class="footer-bottom-container d-flex flex-wrap gap-3 text-center justify-content-between w-100">
+            <div>
+            <p class="m-0">Copyright © 2024 Pay Low Insurance. All Rights Reserved.</p>
+            </div>
+            <div class="social-icons">
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+            <a href="#"><i class="bi bi-twitter"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+        </div>
+            <div class="footer-bottom-anchor">
+                <a href="#">Privacy Policy</a> | <a href="#">Terms & Condition</a>
+            </div>
+        </div>
+    
+        </div>
+    </footer>
+
+  <!-- Footer -->
+
+    <!-- script -->
+     <script src="script.js"></script>
+   <!-- Bootstrap JS -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

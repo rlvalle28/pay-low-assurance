@@ -86,3 +86,5 @@ function updateValue(value) {
   function updateValue2(value) {
     document.getElementById('rangeValue2').textContent = value;
   }
+
+
