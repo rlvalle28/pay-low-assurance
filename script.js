@@ -88,3 +88,23 @@ function updateValue(value) {
   }
 
 
+
+
+//Loading Template
+function showLoading() {
+    var loadingModal = new bootstrap.Modal(document.getElementById('loadingModal'));
+
+    var step3 = document.getElementById('step3'); // Get the section element
+    var step4 = document.getElementById('step4'); // Get the next step section
+
+    loadingModal.show();
+
+    // Simulate loading process
+    setTimeout(() => {
+        loadingModal.hide(); // Hide loading modal
+        
+        // Hide previous section and show the next step
+        step3.style.display = "none"; 
+        step4.style.display = "block"; 
+    }, 3000); // Hide after 3 seconds
+}

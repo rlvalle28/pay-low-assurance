@@ -1,4 +1,38 @@
+
 /* Tablet brekpoint */
+
+@media screen and (max-width:1400px){
+    .previewSection{
+        right: 0px!important;
+    }
+}
+
+
+@media screen and (max-width:800px){
+    .previewSection{
+        width: 50%;
+    }
+
+    .requestQoute .userAvDestail .userAvatar, .requestQoute .userAvDestail .userDestail{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:500px){
+    .previewSection{
+        width: 100%;
+        position: relative;
+    }
+
+    .previewDetails{
+        width: 100%;
+    }
+
+    .selectRates .dropdown-toggle{
+        font-size:18px!important;
+    }
+}
+
 
 @media (max-width: 800px) {
   
@@ -22,6 +56,8 @@
     .footer-img {
         justify-content: flex-start !important;
     }
+
+
 }
 
 

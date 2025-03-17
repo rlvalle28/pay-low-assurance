@@ -97,6 +97,8 @@ body {
 
 .previewDetails{
   position: relative;
+  border-bottom:1px solid #e2e2e2;
+  padding-bottom: 10px;
 }
 
 .previewDetails .editBtn{
@@ -146,6 +148,17 @@ body {
 
 
 
+
+.addVehicleItem{
+  width: 100%;
+}
+
+.addVehicleItem label{
+  font-family: 'Outfit';
+  font-size: 16px!important;
+}
+
+
 /* Body Form */
 
 /* Additional custom styles for the form */
@@ -188,6 +201,7 @@ body {
     background-color: #fff;
     padding: 5px 15px;
     border-radius: 5px;
+
   }
 
   .userNumber p{
@@ -205,6 +219,24 @@ body {
   }
 
 
+  .userNumber .itemDropdown{
+    width: 250px;
+    padding:15px;
+  }
+
+  .userNumber .itemDropdown .checkIcon i{
+    color: #13BE00;
+    font-size: 15px;
+  }
+
+  .itemDropdown .userInfo p{
+    color: #000;
+  }
+
+  .userNumber.dropdown-toggle::after{
+    display: none!important;
+  }
+
 
   .userSection{
     width: 100%;
@@ -213,6 +245,39 @@ body {
     border-radius: 10px;
     border:1px solid #193A99;
     position: relative;
+  }
+
+
+  .selectRates .dropdown-toggle{
+    background-color: #E4EBFF;
+    padding: 10px 20px!important;
+    font-family: 'Outfit';
+    font-size: 25px!important;
+    border-radius: 5px;
+    border:0;
+    color:#002b87;
+  }
+
+
+
+  .requestQoute .userAvDestail .userAvatar,
+  .requestQoute .userAvDestail .userDestail{
+    width: 50%;
+  }
+
+  .requestQoute .userAvDestail .userAvatar img{
+    width: 100%;
+  }
+
+  .requestQoute .userAvDestail .userAvatar .checkIcon i{
+    font-size: 20px!important;
+    color:#13BE00;
+  }
+  
+
+
+  .selectRates .dropdown-menu{
+    padding:20px!important;
   }
 
   .closeIcon{
@@ -245,6 +310,71 @@ body {
     font-size: 55px;
     color:#002b87;
   }
+
+
+  .userAvatar img{
+    height: 80px;
+    width: 60px;
+    object-fit: contain;
+  }
+  
+
+
+
+  .modal-content img{
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+  }
+
+  .modal-content h5{
+    font-size: 25px;
+    font-weight: 500;
+    color:#CD0118;
+  }
+
+  .modal-content h3{
+    font-size: 35px;
+    font-weight: 700;
+    color:#002b87;
+  }
+
+
+  .modal-body h3{
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+    color: #002b87;
+  }
+
+  .modal-body ul{
+    list-style: none!important;
+    padding: 0px;
+  }
+
+  .modal-body ul li{
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    color: #000;
+  }
+
+
+  .modal-body p{
+    text-align: center!important;
+    font-size: 25px!important;
+    font-weight: 600;
+    width: 100%;
+  }
+
+  .modal-body p a{
+    font-size: 25px;
+    font-weight: 600;
+    color: #CD0118;
+  }
+
+
+
 
   .userDestail h2{
     font-size: 30px;

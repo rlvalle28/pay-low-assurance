@@ -94,235 +94,445 @@
                 <!-- Step 1 -->
                 <div class="step active" id="step1">
 
-                    <h6>Get Your Quote In 3 Easy Steps</h6>
-                    <p>We Need Your Basic Details To Get Started</p>
+                  <h6>Get Your Quote In 3 Easy Steps</h6>
+                  <p>We Need Your Basic Details To Get Started</p>
 
-                    <hr>
+                  <hr>
 
-                    <div class="tab-form p-3">
-                        <div class="form-inputs d-flex flex-wrap justify-content-center align-items-center gap-3">
-                            <div class="mb-3">
-                                <label for="name" class="form-label">First Name<span id="asterisk">*</span></label>
-                                <input type="text" class="form-control" id="fname" required>
-                            </div>          
-                            <div class="mb-3">
-                                <label for="name" class="form-label">Last Name<span id="asterisk">*</span></label>
-                                <input type="text" class="form-control" id="lname" required>
-                            </div>
-                        </div>
-                        <div class="form-inputs d-flex flex-wrap align-items-center gap-2 mb-4">
-                            <label for="name" class="form-label m-0">Date of Birth<span id="asterisk">*</span></label>
-                            <input type="date" class="form-control w-100" id="date" placeholder="Month" required>
-                        </div>
-                        <div class="form-inputs d-flex flex-wrap align-items-center gap-2 mb-4">
-                            <label for="name" class="form-label">Mobile Phone Number<span id="asterisk">*</span></label>
-                            <input type="text" class="form-control" id="pNumber" required>
-                        </div>
-                        <div class="form-inputs d-flex flex-wrap align-items-center gap-2">
-                            <label for="name" class="form-label">Email Address<span id="asterisk">*</span></label>
-                            <input type="text" class="form-control" id="address" required>        
-                        </div>
+                  <div class="tab-form p-3">
+                      <div class="form-inputs d-flex flex-wrap justify-content-center align-items-center gap-3">
+                          <div class="mb-3">
+                              <label for="name" class="form-label">First Name<span id="asterisk">*</span></label>
+                              <input type="text" class="form-control" id="fname" required>
+                          </div>          
+                          <div class="mb-3">
+                              <label for="name" class="form-label">Last Name<span id="asterisk">*</span></label>
+                              <input type="text" class="form-control" id="lname" required>
+                          </div>
+                      </div>
+                      <div class="form-inputs d-flex flex-wrap align-items-center gap-2 mb-4">
+                          <label for="name" class="form-label m-0">Date of Birth<span id="asterisk">*</span></label>
+                          <input type="date" class="form-control w-100" id="date" placeholder="Month" required>
+                      </div>
+                      <div class="form-inputs d-flex flex-wrap align-items-center gap-2 mb-4">
+                          <label for="name" class="form-label">Mobile Phone Number<span id="asterisk">*</span></label>
+                          <input type="text" class="form-control" id="pNumber" required>
+                      </div>
+                      <div class="form-inputs d-flex flex-wrap align-items-center gap-2">
+                          <label for="name" class="form-label">Email Address<span id="asterisk">*</span></label>
+                          <input type="text" class="form-control" id="address" required>        
+                      </div>
 
-                        <div class="form-inputs d-flex align-items-center gap-2">
-                            <p>By Clicking Continue, I Agree To The Pay Low Insurance Privacy Policy And Terms Of Use , And I Consent To Pay Low Insurance Or Their Successors Contacting Me With Offers About Their Services. I Agree That Such Contact May Occur Via Automated System Or Pre-Recorded Message And I Understand Giving Consent To Contact Is Not Required For Any Purchase. I Also Give My Express Written Consent To Be Contacted At The Mobile Phone Number Provided Above For Marketing Purposes By Call, Text, Or Automated Telephone Dialing System, Including With An Artificial Or Prerecorded Voice, Which May Leave A Message. Message And Data Rate May Apply. Message Frequency Varies. Text HELP For Help And STOP To Cancel At Any Time. I Understand That I Am Providing This Consent Even If My Telephone Number Is Currently Listed On A Federal, State, Internal, Or Corporate Do-Not-Call List. I Understand That I Do Not Have To Agree To Receive These Types Of Calls Or Text Messages As A Condition Of Purchasing Any Goods Or Services. This Site Is Protected By Recaptcha And The Google Privacy Policy And Terms Of Use Apply."</p>
-                        </div>
-                        
-                    </div>
-            
-                    <div class="btns d-flex justify-content-end gap-3">
-                        <button type="button" class="btn btn-danger next-btn" onclick="nextStep(2)">Continue</button>
-                    </div>
+                      <div class="form-inputs d-flex align-items-center gap-2">
+                          <p>By Clicking Continue, I Agree To The Pay Low Insurance Privacy Policy And Terms Of Use , And I Consent To Pay Low Insurance Or Their Successors Contacting Me With Offers About Their Services. I Agree That Such Contact May Occur Via Automated System Or Pre-Recorded Message And I Understand Giving Consent To Contact Is Not Required For Any Purchase. I Also Give My Express Written Consent To Be Contacted At The Mobile Phone Number Provided Above For Marketing Purposes By Call, Text, Or Automated Telephone Dialing System, Including With An Artificial Or Prerecorded Voice, Which May Leave A Message. Message And Data Rate May Apply. Message Frequency Varies. Text HELP For Help And STOP To Cancel At Any Time. I Understand That I Am Providing This Consent Even If My Telephone Number Is Currently Listed On A Federal, State, Internal, Or Corporate Do-Not-Call List. I Understand That I Do Not Have To Agree To Receive These Types Of Calls Or Text Messages As A Condition Of Purchasing Any Goods Or Services. This Site Is Protected By Recaptcha And The Google Privacy Policy And Terms Of Use Apply."</p>
+                      </div>
+                      
+                  </div>
+          
+                  <div class="btns d-flex justify-content-end gap-3">
+                      <button type="button" class="btn btn-danger next-btn" onclick="nextStep(2)">Continue</button>
+                  </div>
 
                 </div>
          
                <!-- Step 2 -->
                 <div class="step" id="step2">
 
-                    <div class="d-flex align-items-center gap-3 mb-3">
-                        <div class="userNumber align-items-center d-flex gap-3">
-                            <p>1</p>
+                  <div class="d-flex align-items-center gap-3 mb-3">
+                    <div class="dropdown">
+                      <div class="userNumber align-items-center d-flex gap-3 dropdown dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <p>1</p>
+                        <i class="bi bi-person-circle"></i>
+                        <div class="dropdown-menu">
+                          <div class="itemDropdown d-flex gap-1">
+                            <div class="checkIcon">
+                              <i class="bi bi-check-circle-fill"></i>
+                            </div>
+                            <div class="previewDetails w-100">
+                              <h4>Drivers Details</h4>
+                              <div class="userInfo">
+                                  <p>John Doe</p>
+                                  <p>10001</p>
+                                  <p>Natz.Bravegg@Gmail.Com</p>
+                              </div>
+                              <div class="editBtn d-flex align-items-center gap-1" data-bs-toggle="modal" data-bs-target="#editMobal">
+                                  <i class="bi bi-pencil-square"></i>
+                                  <p>Edit</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="dropdown">
+                      <div class="userNumber align-items-center d-flex gap-3 dropdown dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <p>0</p>
+                        <i class="bi bi-car-front-fill"></i>
+                        <div class="dropdown-menu">
+                          <div class="itemDropdown d-flex gap-1">
+                            <div class="checkIcon">
+                              <i class="bi bi-check-circle-fill"></i>
+                            </div>
+                            <div class="previewDetails w-100">
+                              <h4>Vehicle Details</h4>
+                              <div class="userInfo">
+                                  <p>John Doe</p>
+                                  <p>10001</p>
+                                  <p>Natz.Bravegg@Gmail.Com</p>
+                              </div>
+                              <div class="editBtn d-flex align-items-center gap-1" data-bs-toggle="modal" data-bs-target="#editMobal">
+                                  <i class="bi bi-pencil-square"></i>
+                                  <p>Edit</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <h6 style="text-align: left;">Drivers On Your Policy*</h6>
+
+                  <hr>
+                  <h6 class="mt-5" style="text-align: left; color: #002b87; font-size: 30px;">Drivers On Your Policy*</h6>
+              
+
+                  <!-- Button trigger modal -->
+                  <div class="userSection" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <i class="closeIcon bi bi-x-circle"></i>
+                    <div class="userAvDestail d-flex align-items-center gap-3">
+                        <div class="userAvatar">
                             <i class="bi bi-person-circle"></i>
                         </div>
-                        <div class="userNumber align-items-center d-flex gap-3">
-                            <p>0</p>
-                            <i class="bi bi-car-front-fill"></i>
+                        <div class="userDestail">
+                            <h2>John Doe</h2>
+                            <p>Applicant</p>
                         </div>
                     </div>
 
-                    <h6 style="text-align: left;">Drivers On Your Policy*</h6>
-
-                    <hr>
-
-
-                    <h6 class="mt-5" style="text-align: left; color: #002b87; font-size: 30px;">Drivers On Your Policy*</h6>
-                
-
-                    <!-- Button trigger modal -->
-                    <div class="userSection" data-bs-toggle="modal" data-bs-target="#exampleModal">
-
-                        <i class="closeIcon bi bi-x-circle"></i>
-
-                        <div class="userAvDestail d-flex align-items-center gap-3">
-                            <div class="userAvatar">
-                                <i class="bi bi-person-circle"></i>
-                            </div>
-                            <div class="userDestail">
-                                <h2>John Doe</h2>
-                                <p>Applicant</p>
-                            </div>
-                        </div>
-
-                        <div class="editBtn d-flex align-items-center gap-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                            <i class="bi bi-pencil-square"></i>
-                            <p>Edit</p>
-                        </div>
+                    <div class="editBtn d-flex align-items-center gap-3" data-bs-toggle="modal" data-bs-target="#editMobal">
+                      <i class="bi bi-pencil-square"></i>
+                      <p>Edit</p>
                     </div>
+                  </div>
                     
                     
 
 
-                    <div class="btns d-flex justify-content-end gap-3 mt-5">
-                        <button type="button" class="btn btn-primary prev-btn" onclick="prevStep(1)">BACK</button>
-                        <button type="button" class="btn btn-danger next-btn" onclick="nextStep(3)">NEXT</button>
+                  <div class="btns d-flex justify-content-end gap-3 mt-5">
+                    <button type="button" class="btn btn-primary prev-btn" onclick="prevStep(1)">BACK</button>
+                    <button type="button" class="btn btn-danger next-btn" type="button" data-bs-toggle="modal" data-bs-target="#vehicelModal">NEXT</button>
+                  </div>
+
+
+
+                  <div class="modal fade" id="vehicelModal" tabindex="-1" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title">Add Vehicle</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <form class="addVehicleSection">
+                            <div class="addVehicleItem mb-3">
+                              <label>Year*</label>
+                              <select class="form-select" aria-label="Default select example">
+                                <option selected>Year</option>
+                                <option value="1999">1999</option>
+                                <option value="2000">2000</option>
+                                <option value="2001">2001</option>
+                              </select>
+                            </div>
+                            <div class="addVehicleItem mb-3">
+                              <label>Make*</label>
+                              <select class="form-select" aria-label="Default select example">
+                                <option selected>Make</option>
+                                <option value="MakeOne">Make One</option>
+                                <option value="MakeTwo">Make Two</option>
+                                <option value="MakeThree">Make Three</option>
+                              </select>
+                            </div>
+                            <div class="addVehicleItem mb-3">
+                              <label>Model*</label>
+                              <select class="form-select" aria-label="Default select example">
+                                <option selected>Model</option>
+                                <option value="ModelOne">Model One</option>
+                                <option value="ModelTwo">Model Two</option>
+                                <option value="ModelThree">Model Three</option>
+                              </select>
+                            </div>
+                            <div class="addVehicleItem mb-3">
+                              <label>Trim*</label>
+                              <select class="form-select" aria-label="Default select example">
+                                <option selected>Trim</option>
+                                <option value="TrimOne">Trim One</option>
+                                <option value="TrimTwo">Trim Two</option>
+                                <option value="TrimThree">Trim Three</option>
+                              </select>
+                            </div>
+                          </form>
+                        </div>
+                        <div class="modal-footer">
+                          <div class="btns d-flex justify-content-end gap-3">
+                            <button type="button" class="btn btn-primary prev-btn" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-danger next-btn" data-bs-dismiss="modal" onclick="nextStep(3)">NEXT</button>
+                          </div>
+                        </div>
+                      </div>
                     </div>
+                  </div>
                 </div>
          
          
                  <!-- Step 3 -->
                 <div class="step" id="step3">
-                    <div class="form-title text-center mb-4">
-                    <h1>Choose Your Vehicle Make</h1>
+                  
+                  <div class="d-flex align-items-center gap-3 mb-3">
+                    <div class="dropdown">
+                      <div class="userNumber align-items-center d-flex gap-3 dropdown dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <p>1</p>
+                        <i class="bi bi-person-circle"></i>
+                        <div class="dropdown-menu">
+                          <div class="itemDropdown d-flex gap-1">
+                            <div class="checkIcon">
+                              <i class="bi bi-check-circle-fill"></i>
+                            </div>
+                            <div class="previewDetails w-100">
+                              <h4>Drivers Details</h4>
+                              <div class="userInfo">
+                                  <p>John Doe</p>
+                                  <p>10001</p>
+                                  <p>Natz.Bravegg@Gmail.Com</p>
+                              </div>
+                              <div class="editBtn d-flex align-items-center gap-1" data-bs-toggle="modal" data-bs-target="#editMobal">
+                                  <i class="bi bi-pencil-square"></i>
+                                  <p>Edit</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
+                    <div class="dropdown">
+                      <div class="userNumber align-items-center d-flex gap-3 dropdown dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <p>1</p>
+                        <i class="bi bi-car-front-fill"></i>
+                        <div class="dropdown-menu">
+                          <div class="itemDropdown d-flex gap-1">
+                            <div class="checkIcon">
+                              <i class="bi bi-check-circle-fill"></i>
+                            </div>
+                            <div class="previewDetails w-100">
+                              <h4>Vehicle Details</h4>
+                              <div class="userInfo">
+                                  <p>John Doe</p>
+                                  <p>10001</p>
+                                  <p>Natz.Bravegg@Gmail.Com</p>
+                              </div>
+                              <div class="editBtn d-flex align-items-center gap-1" data-bs-toggle="modal" data-bs-target="#editMobal">
+                                  <i class="bi bi-pencil-square"></i>
+                                  <p>Edit</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <h6 style="text-align: left;">Vehicle Summary</h6>
+                  <h6 class="mt-5" style="text-align: left; color: #002b87; font-size: 30px;">Tell Us About Your Vehicle(S)</h6>
+                  <hr>
+                  <h6 class="mt-5" style="text-align: left; color: #000; font-size: 20px;">Step 3 - Vehicle</h6>
+                  <h6 class="mt-0" style="text-align: left; color: #002b87; font-size: 30px;">Drivers On Your Policy*</h6>
+              
+
+                  <div class="userSection mb-4" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <i class="closeIcon bi bi-x-circle"></i>
+                    <div class="userAvDestail d-flex align-items-center gap-3">
+                        <div class="userAvatar">
+                          <img src="/assets/bmw-Img.png">
+                        </div>
+                        <div class="userDestail">
+                            <p>2010</p>
+                            <h2>BMW 3281</h2>
+                        </div>
+                    </div>
+
+                    <div class="editBtn d-flex align-items-center gap-3" data-bs-toggle="modal" data-bs-target="#editMobal">
+                      <i class="bi bi-pencil-square"></i>
+                      <p>Edit</p>
+                    </div>
+                  </div>
+
+                  <div class="d-flex justify-content-end mb-5">
+                    <button type="button" class="btn btn-danger prev-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">+ Add Vehicle</button>
+                  </div>
+                
+                  <div class="btns d-flex justify-content-end gap-3">
+                    <button type="button" class="btn btn-primary prev-btn" onclick="prevStep(2)">BACK</button>
+                    <button type="button" class="btn btn-danger next-btn" onclick="showLoading()">Show my qoute</button>
+                  </div>
+                </div>
+
+
+
+                <div class="modal fade" id="loadingModal" tabindex="-1" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
+                  <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content text-center p-4 d-flex flex-column align-items-center gap-2">
+                        <img src="/assets/noun-search-files.png">
+                        <h5>Searching For The Bes Rates</h5>
+                        <h3>85% Of Drivers Use Their Seat Belts</h3>
+                        <div class="spinner-border text-primary" role="status">
+                          <span class="visually-hidden">Loading...</span>
+                        </div>
+                          
+                      </div>
+                  </div>
+              </div>
          
-                         <div class="row justify-content-center mb-4 w-100">
-                           <div class="col-md-12 searchBox-container">
-                               <input type="text" id="searchBox" class="form-control" placeholder="Search Model">
-                               <i class="bi bi-search"></i>
-                           </div>
-                         </div>
+                <!-- Step 4 -->
+                <div class="step" id="step4">
+                  <div class="d-flex align-items-center gap-3 mb-3">
+                    <div class="dropdown">
+                      <div class="userNumber align-items-center d-flex gap-3 dropdown dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <p>1</p>
+                        <i class="bi bi-person-circle"></i>
+                        <div class="dropdown-menu">
+                          <div class="itemDropdown d-flex gap-1">
+                            <div class="checkIcon">
+                              <i class="bi bi-check-circle-fill"></i>
+                            </div>
+                            <div class="previewDetails w-100">
+                              <h4>Drivers Details</h4>
+                              <div class="userInfo">
+                                  <p>John Doe</p>
+                                  <p>10001</p>
+                                  <p>Natz.Bravegg@Gmail.Com</p>
+                              </div>
+                              <div class="editBtn d-flex align-items-center gap-1" data-bs-toggle="modal" data-bs-target="#editMobal">
+                                  <i class="bi bi-pencil-square"></i>
+                                  <p>Edit</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="dropdown">
+                      <div class="userNumber align-items-center d-flex gap-3 dropdown dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <p>1</p>
+                        <i class="bi bi-car-front-fill"></i>
+                        <div class="dropdown-menu">
+                          <div class="itemDropdown d-flex gap-1">
+                            <div class="checkIcon">
+                              <i class="bi bi-check-circle-fill"></i>
+                            </div>
+                            <div class="previewDetails w-100">
+                              <h4>Vehicle Details</h4>
+                              <div class="userInfo">
+                                  <p>John Doe</p>
+                                  <p>10001</p>
+                                  <p>Natz.Bravegg@Gmail.Com</p>
+                              </div>
+                              <div class="editBtn d-flex align-items-center gap-1" data-bs-toggle="modal" data-bs-target="#editMobal">
+                                  <i class="bi bi-pencil-square"></i>
+                                  <p>Edit</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <h6 style="text-align: left;">Select Rates</h6>
+                
+                  <div class="userSection mb-4 p-4">
+                    <h4 class="text-center mb-4" style="color: #002b87; font-size: 30px;">Select Your Preferred Coverage Options</h4>
+                    <div class="dropdown selectRates">
+                      <button class="dropdown-toggle w-100" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="bi bi-shield-shaded"></i> State Minimum Coverage 
+                      </button>
+                      <div class="dropdown-menu w-100">
+                        <h3>Coverage</h3>
+                        <div class="form-check d-flex align-items-start gap-2">
+                          <input class="form-check-input mt-2" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                          <label class="form-check-label" for="flexRadioDefault1">
+                            <h4 style="font-size: 30px; color:#002b87;">Select Your Preferred Coverage Options</h4>
+                            <p>Minimum Required By Law. Protects Other Peoples Property</p>
+                          </label>
+                        </div>
+                        <div class="form-check d-flex align-items-start gap-2">
+                          <input class="form-check-input mt-2" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                          <label class="form-check-label" for="flexRadioDefault1">
+                            <h4 style="font-size: 30px; color:#002b87;">Comprehensive & Collision</h4>
+                            <p>Protect Others And Yourself (Including Your Property)</p>
+                          </label>
+                        </div>
+                      </div>
+                    </div>                    
+                  </div>
+              
+
+                  <div class="requestQoute userSection mb-4">
+                    
+                    <div class="userAvDestail d-flex align-items-center flex-lg-row flex-column gap-3">
+                        <div class="userAvatar d-flex flex-column align-items-center gap-3">
+                          <img src="/assets/975.png">
+                          <div class="checkIcon d-flex gap-2 align-items-center">
+                            <i class="bi bi-check-circle-fill"></i> <p style="margin: 0px!important;">See Plan Details</p>
+                          </div>
+                        </div>
+                        <div class="userDestail d-flex flex-column align-items-center gap-3">
+                            <h2 style="color:#000;">$266.75 / mo</h2>
+                            <button type="button" class="btn btn-primary prev-btn" data-bs-toggle="modal" data-bs-target="#finalQoute">Speak With Agent</button>
+                            <div class="modal fade" id="finalQoute" tabindex="-1" aria-labelledby="exampleModalLabel">
+                              <div class="modal-dialog">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Get Covered In Minutes.</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                  </div>
+                                  <div class="modal-body">
+                                    <h3>We're Looking Forward To 
+                                      Speaking With You!</h3>
+                                    <ul class="d-flex flex-column gap-1 align-items-center">
+                                      <li>Our Staff Is Available</li>
+                                      <li>M-F 6:00Am - 8:00Pm</li>
+                                      <li>SAT 6:00Am - 7:00Pm</li>
+                                      <li>SUN 7:00Am - 5:00Pm</li>
+                                      <li>(All Time PST)</li>
+                                    </ul>
+                                    <p>Call Us At <a href="tel:877-661-5901">877-661-5901</a></p>
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+
+                  <p style="text-align: left; font-size: 13px;">
+                    *Based On Average For A Single Driver In Your State For The Past Six Months. Actual Policy Premium May Vary Based On Driving Records, Garaging Address, Vehicle Type, Insurance Coverage Selected And Other Underwriting Factors. Other Rates, Service Fees, Restrictions And Changes May Apply.
+                    Important Notes: Rated Coverage's Listed Above, Such As Uninsured Or Underinsured Motorist May Be Able To Be Rejected Or Waived In Your State. Additionally, Some Finance Companies May Require A Lower Deductible. If You Wish To Review Or Modify Your Coverage Selections, Please Speak With One Of Our Agents To Explore Your Coverage Options.
+                  </p>
+                  <p style="text-align: left; font-size: 13px;">
+                    Freeway Insurance Services America, LLC And Its Affiliated Companies Identified At On Www.Freeway.Com/Affiliate-Disclosure. By Responding To This Advertisement, Your Call May Be Routed To One Of These Freeway-Affiliated Companies Due To Geographical Licensing Restrictions. Actual Policy Premium May Vary Based On Driving Records, Garaging Address, Vehicle Type, Insurance Coverage Selected And Other Underwriting Factors. Other Rates, Service Fees, Restrictions And Charges May Apply.
+                  </p>
+                  <p style="text-align: left; font-size: 13px;">
+                    Simplified Quotes Shown Above Are Based On No Tickets Or Accidents, And <\10,000 Miles Driven Per Year.
+                  </p>
+
+
+  
+                </div>
          
-                         <div class="row d-flex gap-3 justify-content-center m-3" id="brandContainer">
-                                   <!-- Brand Item -->
-                                   <div class="col-md-3 brand-item" data-name="ac">
-                                       <img src="./assets/model/1.webp" alt="ac" class="img-fluid">
-                                   </div>
-                                   <div class="col-md-3 brand-item" data-name="acura">
-                                       <img src="./assets/model/2.webp" alt="acura" class="img-fluid">
-                                   </div>
-                                   <div class="col-md-3 brand-item" data-name="alfa romero">
-                                     <img src="./assets/model/3.webp" alt="alfa romero" class="img-fluid">
-                                   </div>
-                                   <div class="col-md-3 brand-item" data-name="alvis">
-                                     <img src="./assets/model/4.webp" alt="alvis" class="img-fluid">
-                                   </div>
-                                   <div class="col-md-3 brand-item" data-name="audi">
-                                     <img src="./assets/model/5.webp" alt="audi" class="img-fluid">
-                                   </div>
-                                   <div class="col-md-3 brand-item" data-name="alfa romero">
-                                     <img src="./assets/model/6.webp" alt="alfa romero" class="img-fluid">
-                                 </div>
-                                 <div class="col-md-3 brand-item" data-name="bmw">
-                                   <img src="./assets/model/7.webp" alt="bmw" class="img-fluid">
-                               </div>
-                               <div class="col-md-3 brand-item" data-name="bently">
-                                   <img src="./assets/model/8.webp" alt="bently" class="img-fluid">
-                               </div>
-                               <div class="col-md-3 brand-item" data-name="bugatti">
-                                 <img src="./assets/model/9.webp" alt="bugatti" class="img-fluid">
-                               </div>
-                               <div class="col-md-3 brand-item" data-name="buick">
-                                 <img src="./assets/model/10.webp" alt="buick" class="img-fluid">
-                               </div>
-                               <div class="col-md-3 brand-item" data-name="cadilac">
-                                 <img src="./assets/model/11.webp" alt="cadilac" class="img-fluid">
-                               </div>
-                               <div class="col-md-3 brand-item" data-name="chevolet">
-                                 <img src="./assets/model/12.webp" alt="chevolet" class="img-fluid">
-                               </div>
-                               <div class="col-md-3 brand-item" data-name="ferarri">
-                                 <img src="./assets/model/13.webp" alt="ferarri" class="img-fluid">
-                               </div>
-                               <div class="col-md-3 brand-item" data-name="fiat">
-                                 <img src="./assets/model/14.webp" alt="fiat" class="img-fluid">
-                             </div>
-                             <div class="col-md-3 brand-item" data-name="ford">
-                               <img src="./assets/model/15.webp" alt="ford" class="img-fluid">
-                             </div>
-                         </div>
-                 
-                         <div class="btns d-flex justify-content-end gap-3">
-                           <button type="button" class="btn btn-primary prev-btn" onclick="prevStep(2)">BACK</button>
-                           <button type="button" class="btn btn-danger next-btn" onclick="nextStep(4)">NEXT</button>
-                         </div>
-                   </div>
-         
-                    <!-- Step 4 -->
-                    <div class="step" id="step4">
-                     <div class="form-title text-center mb-4">
-                       <h1>Choose Your Vehicle Model</h1>
-                     </div>
-         
-                     <div class="row justify-content-center mb-4 w-100">
-                       <div class="col-md-12 searchBox-container">
-                           <input type="text" id="brandNameBox" class="form-control" placeholder="Search Model">
-                           <i class="bi bi-search"></i>
-                       </div>
-                     </div>
-         
-                     <div class="row d-flex gap-3 justify-content-center m-3" id="brandContainer">
-                       <!-- Brand Item -->
-                       <div class="col-md-5 brand-item brandName-item" data-name="1-series">
-                           <p class="m-0"><b>1-Series</b></p>
-                       </div>
-                       <div class="col-md-5 brand-item brandName-item" data-name="1500">
-                         <p class="m-0"><b>1500</b></p>
-                       </div>
-                       <div class="col-md-5 brand-item brandName-item" data-name="1500, 1600, 1800, 1800TI">
-                         <p class="m-0"><b>1500, 1600, 1800, 1800TI</b></p>
-                       </div>
-                       <div class="col-md-5 brand-item brandName-item" data-name="1500, 1800">
-                         <p class="m-0"><b>1500, 1800</b></p>
-                       </div>
-                       <div class="col-md-5 brand-item brandName-item" data-name="1-series">
-                         <p class="m-0"><b>1-Series</b></p>
-                     </div>
-                     <div class="col-md-5 brand-item brandName-item" data-name="1500">
-                       <p class="m-0"><b>1500</b></p>
-                     </div>
-                     <div class="col-md-5 brand-item brandName-item" data-name="1600, 1600-2, 1600TI, 1800, 1800TI, 2000, 2000C, 2000CS, 2000TI">
-                       <p class="m-0"><b>1600, 1600-2, 1600TI, 1800, 1800TI, 2000, 2000C, 2000CS, 2000TI</b></p>
-                     </div>
-                     <div class="col-md-5 brand-item brandName-item" data-name="1600, 1600-2, 1600TI, 1800, 1800TI, 2000, 2000C, 2000CS, 2000TI">
-                       <p class="m-0"><b>1600, 1600-2, 1600TI, 1800, 1800TI, 2000, 2000C, 2000CS, 2000TI</b></p>
-                     </div>
-                     <div class="col-md-5 brand-item brandName-item" data-name="1600, 1600GT, 1600TI, 1800, 2000, 2000C, 2000CS, 2000TI">
-                       <p class="m-0"><b>1600, 1600GT, 1600TI, 1800, 2000, 2000C, 2000CS, 2000TI</b></p>
-                     </div>
-                     <div class="col-md-5 brand-item brandName-item" data-name="1600, 1800, 1800TI, 2000C, 2000CS">
-                       <p class="m-0"><b>1600, 1800, 1800TI, 2000C, 2000CS</b></p>
-                     </div>
-                     <div class="col-md-5 brand-item brandName-item" data-name="1600, 1800, 2000, 2000C, 2000CS">
-                       <p class="m-0"><b>1600, 1800, 2000, 2000C, 2000CS</b></p>
-                     </div>
-                     <div class="col-md-5 brand-item brandName-item" data-name="1600, 2000">
-                       <p class="m-0"><b>1600, 2000</b></p>
-                     </div>
-                     <div class="col-md-5 brand-item brandName-item" data-name="1600, 2000, 2000 Touring, 2000TII">
-                       <p class="m-0"><b>1600, 2000, 2000 Touring, 2000TII</b></p>
-                     </div>
-                     <div class="col-md-5 brand-item brandName-item" data-name="2-Series">
-                       <p class="m-0"><b>2-Series</b></p>
-                     </div>
-                   
-                     </div>
-             
-                     <div class="btns d-flex justify-content-end gap-3">
-                       <button type="button" class="btn btn-primary prev-btn" onclick="prevStep(3)">BACK</button>
-                       <button type="button" class="btn btn-danger next-btn" onclick="nextStep(5)">NEXT</button>
-                     </div>
-                 </div>
-         
-                 <!-- Step 5 -->
+                <!-- Step 5 -->
                  <div class="step" id="step5">
                    <div class="form-title text-center mb-4">
                      <h1>Choose Your Vehicle Year</h1>
