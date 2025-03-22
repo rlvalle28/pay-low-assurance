@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mobile Home Insurance Form</title>
+  <title>Homeowner Insurance Form</title>
   <!-- Bootstrap CSS -->
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
@@ -78,7 +78,7 @@
 
     <section class="container-fluid">
         <div class="container body-form">
-            <h6>Motorhome Insurance Quote</h6>
+            <h6>Homeowners Insurance Quote</h6>
 
             <!-- Progress bar -->
             <div class="progress-container mb-4">
@@ -98,58 +98,58 @@
                     <div class="tab-form p-3">
                         <div class="form-inputs d-flex justify-content-center align-items-center gap-3 w-50">
                             <div class="mb-3">
-                                <label for="name" class="form-label">Gender<span id="asterisk">*</span></label>
+                                <label for="hiq-Gender" class="form-label">Gender<span id="asterisk">*</span></label>
                                 <select class="form-select" aria-label="Gender">
                                     <option selected>Select Your Gender</option>
-                                    <option value="Male">Male</option>
-                                    <option value="Female">Female</option>
-                                    <option value="Rather Not Say">Rather Not Say</option>
+                                    <option value="hiq-Male">Male</option>
+                                    <option value="hiq-Female">Female</option>
+                                    <option value="hiq-RatherNotSay">Rather Not Say</option>
                                 </select>
                             </div>          
                         </div>
                         <div class="form-inputs d-flex justify-content-center align-items-center gap-3">
                             <div class="mb-3 frmInput">
-                                <label for="name" class="form-label">First Name<span id="asterisk">*</span></label>
-                                <input type="text" class="form-control" id="fname" required>
+                                <label for="hiq-fname" class="form-label">First Name<span id="asterisk">*</span></label>
+                                <input type="text" class="form-control" id="hiq-fname" required>
                             </div>          
                             <div class="mb-3 frmInput">
-                                <label for="name" class="form-label">Last Name<span id="asterisk">*</span></label>
-                                <input type="text" class="form-control" id="lname" required>
+                                <label for="hiq-lname" class="form-label">Last Name<span id="asterisk">*</span></label>
+                                <input type="text" class="form-control" id="hiq-lname" required>
                             </div>
                         </div>
                         
                         <div class="form-inputs d-flex justify-content-center align-items-center gap-3">
                             <div class="mb-3 frmInput">
-                                <label for="name" class="form-label">What is your email address?<span id="asterisk">*</span></label>
-                                <input type="text" class="form-control" id="wStrAddress" required>
+                                <label for="hiq-email" class="form-label">What is your email address?<span id="asterisk">*</span></label>
+                                <input type="email" class="form-control" id="hiq-email" required>
                             </div>          
                             <div class="mb-3 frmInput">
-                                <label for="name" class="form-label">What is your phone number?<span id="asterisk">*</span></label>
-                                <input type="text" class="form-control" id="wPnumber" required>
+                                <label for="hiq-phone" class="form-label">What is your phone number?<span id="asterisk">*</span></label>
+                                <input type="tel" class="form-control" id="hiq-phone" required>
                             </div>
                         </div>
 
                         <div class="form-inputs d-flex justify-content-center align-items-center gap-3">
                             <div class="mb-3 frmInput">
-                                <label for="name" class="form-label">Street address (Address use for quoting)<span id="asterisk">*</span></label>
-                                <input type="text" class="form-control" id="wEAddress" required>
+                                <label for="hiq-marital_status" class="form-label">Marital Status<span id="asterisk">*</span></label>
+                                <select class="form-select" aria-label="hiq-marital_status">
+                                    <option selected>Select Your Status</option>
+                                    <option value="Single">Single</option>
+                                    <option value="Married">Married</option>
+                                    <option value="Rather Not Say">Rather Not Say</option>
+                                </select>
                             </div>          
                             <div class="mb-3 frmInput">
-                                <label for="name" class="form-label">Apt/Suite<span id="asterisk">*</span></label>
-                                <input type="text" class="form-control" id="Apt/Suite" required>
+                                <label for="hiq-Date-Birth" class="form-label">Date of Birth<span id="asterisk">*</span></label>
+                                <div class="bday-inputs">
+                                    <input type="text" class="form-control" id="hiq-month" placeholder="Month" required>
+                                    <input type="text" class="form-control" id="hiq-day" placeholder="Day" required>
+                                    <input type="text" class="form-control" id="hiq-year" placeholder="Year" required>
+                                  </div>
                             </div>
                         </div>
 
-                        <div class="form-inputs d-flex justify-content-center align-items-center gap-3">
-                            <div class="mb-3 frmInput">
-                                <label for="name" class="form-label">Zip Code<span id="asterisk">*</span></label>
-                                <input type="text" class="form-control" id="zipCode" required>
-                            </div>          
-                            <div class="mb-3 frmInput">
-                                <label for="name" class="form-label">City, State<span id="asterisk">*</span></label>
-                                <input type="text" class="form-control" id="CityState" required>
-                            </div>
-                        </div>
+                        
 
                         <div class="form-inputs d-flex align-items-center gap-2">
                             <p>By Clicking Continue, I Agree To The Pay Low Insurance Privacy Policy And Terms Of Use , And I Consent To Pay Low Insurance Or Their Successors Contacting Me With Offers About Their Services. I Agree That Such Contact May Occur Via Automated System Or Pre-Recorded Message And I Understand Giving Consent To Contact Is Not Required For Any Purchase. I Also Give My Express Written Consent To Be Contacted At The Mobile Phone Number Provided Above For Marketing Purposes By Call, Text, Or Automated Telephone Dialing System, Including With An Artificial Or Prerecorded Voice, Which May Leave A Message. Message And Data Rate May Apply. Message Frequency Varies. Text HELP For Help And STOP To Cancel At Any Time. I Understand That I Am Providing This Consent Even If My Telephone Number Is Currently Listed On A Federal, State, Internal, Or Corporate Do-Not-Call List. I Understand That I Do Not Have To Agree To Receive These Types Of Calls Or Text Messages As A Condition Of Purchasing Any Goods Or Services. This Site Is Protected By Recaptcha And The Google Privacy Policy And Terms Of Use Apply.</p>
@@ -171,91 +171,123 @@
                     <div class="tab-form p-3">
                         <div class="form-inputs d-flex justify-content-center align-items-center gap-3">
                             <div class="mb-3 frmInput">
-                                <label for="name" class="form-label">Marital Status<span id="asterisk">*</span></label>
-                                <select class="form-select" aria-label="Marital">
-                                    <option selected>Select Your Status</option>
-                                    <option value="Single">Single</option>
-                                    <option value="Married">Married</option>
-                                    <option value="Rather Not Say">Rather Not Say</option>
-                                </select>
+                                <label for="hiq-Street_address" class="form-label">Street address (Address use for quoting)<span id="asterisk">*</span></label>
+                                <input type="text" class="form-control" id="hiq-Street_address" required>
                             </div>
                             <div class="mb-3 frmInput">
-                                <label for="name" class="form-label">Date of Birth<span id="asterisk">*</span></label>
-                                <div class="bday-inputs">
-                                  <input type="text" class="form-control" id="month" placeholder="Month" required>
-                                  <input type="text" class="form-control" id="day" placeholder="Day" required>
-                                  <input type="text" class="form-control" id="year" placeholder="Year" required>
-                                </div>
+                                <label for="hiq-Apt/Suite" class="form-label">Apt/Suite<span id="asterisk">*</span></label>
+                                <input type="text" class="form-control" id="hiq-Apt/Suite"required>
                             </div>   
                         </div>
                         <div class="form-inputs d-flex justify-content-center align-items-center gap-3">
                             <div class="mb-3 frmInput">
-                                <label for="name" class="form-label">Driver's license status<span id="asterisk">*</span></label>
-                                <select class="form-select" aria-label="license">
-                                    <option value="Valid">Valid</option>
-                                    <option value="Matricula">Matricula</option>
-                                    <option value="Foreign License">Foreign License</option>
-                                    <option value="Permit">Permit</option>
-                                    <option value="Suspended">Suspended</option>
-                                    <option value="Permanently Revoked">Permanently Revoked</option>
-                                    <option value="Expired">Expired</option>
-                                    <option value="Not Licensed">Not Licensed</option>
-                                    <option value="Commercial">Commercial</option>
-                                    <option value="Business">Business</option>
-                                    <option value="Other">Other</option>
-                                </select>
+                                <label for="hiq-ZipCode" class="form-label">Zip Code<span id="asterisk">*</span></label>
+                                <input type="text" class="form-control" id="hiq-ZipCode"required>
                             </div>          
                             <div class="mb-3 frmInput">
-                                <label for="Years-of-driving" class="form-label">Years of driving experience*<span id="asterisk">*</span></label>
-                                <input type="text" class="form-control" id="wStrAddress" required>
+                                <label for="hiq-CityState" class="form-label">City, State<span id="asterisk">*</span></label>
+                                <input type="text" class="form-control" id="hiq-CityState" required>
                             </div> 
                         </div>
                         
                         <div class="form-inputs d-flex justify-content-center align-items-center gap-3">
                             <div class="mb-3 frmInput">
-                                <label for="Motor-Home-license-endorsement" class="form-label w-100">Valid Motor Home license/endorsement?<span id="asterisk">*</span></label>
-                                <div class="btn-group btn-toggle" role="group">
-                                    <input type="radio" class="btn-check" name="toggle1" id="yes1" autocomplete="off" checked>
-                                    <label class="btn btn-primary" for="yes1">Yes</label>
-                            
-                                    <input type="radio" class="btn-check" name="toggle1" id="no1" autocomplete="off">
-                                    <label class="btn btn-outline-primary" for="no1">No</label>
-                                </div>
+                                <label for="hiq-YearBuilt" class="form-label w-100">Year Built<span id="asterisk">*</span></label>
+                                <select class="form-select" aria-label="hiq-YearBuilt">
+                                    <option value="1999">1999</option>
+                                    <option value="2001">2001</option>
+                                    <option value="2002">2002</option>
+                                    <option value="2003">2003</option>
+                                    <option value="2004">2004</option>
+                                    <option value="2005">2005</option>
+                                </select>
                             </div>
                             <div class="mb-3 frmInput">
-                                <label for="driver-completed" class="form-label w-100">Has driver completed a driver training or improvement course in the last 3 years?<span id="asterisk">*</span></label>
-                                <div class="btn-group btn-toggle" role="group">
-                                    <input type="radio" class="btn-check" name="toggle2" id="yes2" autocomplete="off" checked>
-                                    <label class="btn btn-primary" for="yes2">Yes</label>
-                            
-                                    <input type="radio" class="btn-check" name="toggle2" id="no2" autocomplete="off">
-                                    <label class="btn btn-outline-primary" for="no2">No</label>
-                                </div>
+                                <label for="hiq-PropertyUse" class="form-label w-100">Property Use<span id="asterisk">*</span></label>
+                                <select class="form-select" aria-label="hiq-PropertyUse">
+                                    <option value="PropertyUseOne">Property Use One</option>
+                                    <option value="PropertyUseTwo">Property Use Two</option>
+                                    <option value="PropertyUseThree">Property Use Three</option>
+                                    <option value="PropertyUseFour">Property Use Four</option>
+                                </select>
                             </div> 
                         </div>
 
                         <div class="form-inputs d-flex justify-content-center align-items-center gap-3">
                             <div class="mb-3 frmInput">
-                                <label for="name" class="form-label w-100">Does driver require an SR-22 filing?<span id="asterisk">*</span></label>
-                                <div class="btn-group btn-toggle" role="group">
-                                    <input type="radio" class="btn-check" name="toggle3" id="yes3" autocomplete="off" checked>
-                                    <label class="btn btn-primary" for="yes3">Yes</label>
-                            
-                                    <input type="radio" class="btn-check" name="toggle3" id="no3" autocomplete="off">
-                                    <label class="btn btn-outline-primary" for="no3">No</label>
-                                </div>
+                                <label for="hiq-Squarefootage" class="form-label w-100">Square footage of your home:<span id="asterisk">*</span></label>
+                                <input type="text" class="form-control" id="hiq-Squarefootage" required>
                             </div>         
                             <div class="mb-3 frmInput">
-                                <label for="name" class="form-label">Number of incidents (tickets/violations) in the last 3 years?<span id="asterisk">*</span></label>
-                                <select class="form-select" aria-label="incidents">
-                                    <option value="0">0</option>
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="5">5</option>
+                                <label for="hiq-HomeType" class="form-label">Home Type<span id="asterisk">*</span></label>
+                                <select class="form-select" aria-label="hiq-HomeType">
+                                    <option value="HomeType1">Home Type 1</option>
+                                    <option value="HomeType2">Home Type 2</option>
+                                    <option value="HomeType3">Home Type 3</option>
+                                    <option value="HomeType4">Home Type 4</option>
                                 </select>
                             </div>
+                        </div>
+
+                        <div class="form-inputs d-flex justify-content-center align-items-center gap-3">
+                            <div class="mb-3 frmInput">
+                                <label for="hiq-NumberStories" class="form-label w-100">Number Stories<span id="asterisk">*</span></label>
+                                <select class="form-select" aria-label="hiq-NumberStories">
+                                    <option value="Stories1">1</option>
+                                    <option value="Stories2">2</option>
+                                    <option value="Stories3">3</option>
+                                    <option value="Stories4">4</option>
+                                </select>
+                            </div>         
+                            <div class="mb-3 frmInput d-flex flex-column align-items-start">
+                                <label for="hiq-basement" class="form-label">Do you have a basement?<span id="asterisk">*</span></label>
+                                <div class="btn-group btn-toggle" role="group">
+                                    <input type="radio" class="btn-check" name="hiq-basement1" id="yes1" autocomplete="off" checked>
+                                    <label class="btn btn-primary" for="yes1">Yes</label>
+                                    <input type="radio" class="btn-check" name="hiq-basement1" id="no1" autocomplete="off">
+                                    <label class="btn btn-outline-primary" for="no1">No</label>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="form-inputs d-flex justify-content-center align-items-center gap-3">
+
+                            <div class="mb-3 frmInput d-flex flex-column align-items-start">
+                                <label for="hiq-swimmingpool" class="form-label">Do you have a swimming pool?<span id="asterisk">*</span></label>
+                                <div class="btn-group btn-toggle" role="group">
+                                    <input type="radio" class="btn-check" name="hiq-swimmingpool" id="hiq-swp_yes1" autocomplete="off" checked>
+                                    <label class="btn btn-primary" for="hiq-swp_yes1">Yes</label>
+                                    <input type="radio" class="btn-check" name="hiq-swimmingpool" id="hiq-swp_no1" autocomplete="off">
+                                    <label class="btn btn-outline-primary" for="hiq-swp_no1">No</label>
+                                </div>
+                            </div>
+
+                            <div class="mb-3 frmInput">
+                                <label for="hiq-Numberbedrooms" class="form-label w-100">Number of bedrooms<span id="asterisk">*</span></label>
+                                <select class="form-select" aria-label="hiq-Numberbedrooms">
+                                    <option value="bedrooms1">1</option>
+                                    <option value="bedrooms2">2</option>
+                                    <option value="bedrooms3">3</option>
+                                    <option value="bedrooms4">4</option>
+                                </select>
+                            </div>         
+                            
+                        </div>
+
+
+                        <div class="form-inputs d-flex justify-content-center align-items-center gap-3 w-50">
+
+                            <div class="mb-3 frmInput">
+                                <label for="hiq-Numberbathrooms" class="form-label w-100">Number of bathrooms<span id="asterisk">*</span></label>
+                                <select class="form-select" aria-label="hiq-Numberbathrooms">
+                                    <option value="bathrooms1">1</option>
+                                    <option value="bathrooms2">2</option>
+                                    <option value="bathrooms3">3</option>
+                                    <option value="bathrooms4">4</option>
+                                </select>
+                            </div>         
+                            
                         </div>
 
                         <div class="form-inputs d-flex align-items-center gap-2">
@@ -276,56 +308,103 @@
                     <h6 style="text-align: left; font-size: 30px; color:#193A99;">Fields with * are required</h6>
 
                     <div class="tab-form p-3">
-                        <div class="form-inputs d-flex justify-content-center align-items-center gap-3">
-                            <div class="mb-3 frmInput">
-                                <label for="Year" class="form-label">Year<span id="asterisk">*</span></label>
-                                <select id="yearSelect" class="form-select"></select>
-                            </div>
-                            <div class="mb-3 frmInput">
-                                <label for="Make" class="form-label">Make<span id="asterisk">*</span></label>
-                                <div class="bday-inputs">
-                                    <select class="form-select" aria-label="Make">
-                                        <option value="MakeOne">Make One</option>
-                                        <option value="MakeTwo">Make Two</option>
-                                        <option value="MakeThree">Make Three</option>
-                                    </select>
-                                </div>
-                            </div>   
-                        </div>
-                        <div class="form-inputs d-flex justify-content-center align-items-center gap-3">
-                            <div class="mb-3 frmInput">
-                                <label for="Model" class="form-label">Model<span id="asterisk">*</span></label>
-                                <select class="form-select" aria-label="Model">
-                                    <option value="ModelOne">Model One</option>
-                                    <option value="ModelTwo">Model Two</option>
-                                    <option value="ModelThree">Model Three</option>
-                                </select>
-                            </div>          
-                            <div class="mb-3 frmInput">
-                                <label for="vehicle_modification" class="form-label">Vehicle modification<span id="asterisk">*</span></label>
-                                <input type="text" class="form-control" id="wStrAddress" required>
-                            </div> 
-                        </div>
-                        
-                        
 
                         <div class="form-inputs d-flex justify-content-center align-items-center gap-3">
                             <div class="mb-3 frmInput">
-                                <label for="estimated-annual_mileage" class="form-label w-100">Estimated Annual Mileage<span id="asterisk">*</span></label>
-                                <select class="form-select" aria-label="license">
-                                    <option value="Estimated_Annual_MileageOne">Estimated Annual Mileage One</option>
-                                    <option value="Estimated_Annual_MileageTwo">Estimated Annual Mileage Two</option>
-                                    <option value="Estimated_Annual_MileageThree">Estimated Annual Mileage Three</option>
-                                </select>
-                            </div>         
-                            <div class="mb-3 frmInput">
-                                <label for="Vehicle_use" class="form-label">Vehicle use<span id="asterisk">*</span></label>
-                                <select class="form-select" aria-label="Vehicle use">
-                                    <option value="0">0</option>
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
+                                <label for="hiq-insurance_claims" class="form-label">Number of home insurance claims in the last 5 years<span id="asterisk">*</span></label>
+                                <select class="form-select" aria-label="hiq-insurance_claims">
+                                    <option value="insurance_claims1">1</option>
+                                    <option value="insurance_claims2">2</option>
+                                    <option value="insurance_claims3">3</option>
+                                    <option value="insurance_claims3">4</option>
                                 </select>
                             </div>
+                            <div class="mb-3 frmInput">
+                                <label for="hiq-cancellations_due" class="form-label">Number of home insurance cancellations due to non-payment (past 3 years)<span id="asterisk">*</span></label>
+                                <select class="form-select" aria-label="hiq-cancellations_due">
+                                    <option value="cancellations_due1">1</option>
+                                    <option value="cancellations_due2">2</option>
+                                    <option value="cancellations_due3">3</option>
+                                    <option value="cancellations_due4">4</option>
+                                </select>
+                            </div>   
+                        </div>
+
+
+                        <div class="form-inputs d-flex justify-content-center align-items-center gap-3">
+                            <div class="mb-3 frmInput d-flex flex-column align-items-start">
+                                <label for="hiq-ownanydogs" class="form-label">Do you own any dogs?<span id="asterisk">*</span></label>
+                                <div class="btn-group btn-toggle" role="group">
+                                    <input type="radio" class="btn-check" name="hiq-ownanydogs1" id="ownanydogs_yes1" autocomplete="off" checked>
+                                    <label class="btn btn-primary" for="ownanydogs_yes1">Yes</label>
+                                    <input type="radio" class="btn-check" name="hiq-ownanydogs1" id="ownanydogs_no1" autocomplete="off">
+                                    <label class="btn btn-outline-primary" for="ownanydogs_no1">No</label>
+                                </div>
+                            </div>        
+                            <div class="mb-3 frmInput d-flex flex-column align-items-start">
+                                <label for="hiq-businessConducted" class="form-label">Is business conducted on the property?<span id="asterisk">*</span></label>
+                                <div class="btn-group btn-toggle" role="group">
+                                    <input type="radio" class="btn-check" name="hiq-businessConducted1" id="businessConducted_yes1" autocomplete="off" checked>
+                                    <label class="btn btn-primary" for="businessConducted_yes1">Yes</label>
+                                    <input type="radio" class="btn-check" name="hiq-businessConducted1" id="businessConducted_no1" autocomplete="off">
+                                    <label class="btn btn-outline-primary" for="businessConducted_no1">No</label>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="form-inputs d-flex justify-content-center align-items-center gap-3">
+                            <div class="mb-3 frmInput d-flex flex-column align-items-start">
+                                <label for="hiq-indoor_sprinkler" class="form-label">home has indoor sprinkler system<span id="asterisk">*</span></label>
+                                <div class="btn-group btn-toggle" role="group">
+                                    <input type="radio" class="btn-check" name="hiq-indoor_sprinkler1" id="indoor_sprinkler_yes1" autocomplete="off" checked>
+                                    <label class="btn btn-primary" for="indoor_sprinkler_yes1">Yes</label>
+                                    <input type="radio" class="btn-check" name="hiq-indoor_sprinkler1" id="indoor_sprinkler_no1" autocomplete="off">
+                                    <label class="btn btn-outline-primary" for="indoor_sprinkler_no1">No</label>
+                                </div>
+                            </div>        
+                            <div class="mb-3 frmInput d-flex flex-column align-items-start">
+                                <label for="hiq-retired" class="form-label">Are you retired?<span id="asterisk">*</span></label>
+                                <div class="btn-group btn-toggle" role="group">
+                                    <input type="radio" class="btn-check" name="hiq-retired1" id="retired_yes1" autocomplete="off" checked>
+                                    <label class="btn btn-primary" for="retired_yes1">Yes</label>
+                                    <input type="radio" class="btn-check" name="hiq-retired1" id="retired_no1" autocomplete="off">
+                                    <label class="btn btn-outline-primary" for="retired_no1">No</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+                        <div class="form-inputs d-flex justify-content-center align-items-center gap-3">
+                            <div class="mb-3 frmInput">
+                                <label for="hiq-Burglaralarm" class="form-label w-100">Burglar alarm type<span id="asterisk">*</span></label>
+                                <select class="form-select" aria-label="hiq-Burglaralarm">
+                                    <option value="typeOne">Burglar alarm type One</option>
+                                    <option value="typeTwo">Burglar alarm type Two</option>
+                                    <option value="typeThree">Burglar alarm type Three</option>
+                                </select>
+                            </div>
+                            <div class="mb-3 frmInput">
+                                <label for="hiq-FireAlarm" class="form-label w-100">Fire alarm type<span id="asterisk">*</span></label>
+                                <select class="form-select" aria-label="hiq-FireAlarm">
+                                    <option value="FireAlarmOne">Fire alarm type One</option>
+                                    <option value="FireAlarmTwo">Fire alarm type Two</option>
+                                    <option value="FireAlarmThree">Fire alarm type Three</option>
+                                    <option value="FireAlarmFour">Fire alarm type Four</option>
+                                </select>
+                            </div> 
+                        </div>
+
+                        <div class="form-inputs d-flex justify-content-center align-items-center gap-3 w-50">
+                            <div class="mb-3 frmInput">
+                                <label for="hiq-Smokedetectors" class="form-label w-100">Smoke detectors<span id="asterisk">*</span></label>
+                                <select class="form-select" aria-label="hiq-Smokedetectors">
+                                    <option value="SmokedetectorsOne">Smoke detectors One</option>
+                                    <option value="SmokedetectorsTwo">Smoke detectors Two</option>
+                                    <option value="SmokedetectorsThree">Smoke detectors Three</option>
+                                    <option value="SmokedetectorsFour">Smoke detectors Four</option>
+                                </select>
+                            </div> 
                         </div>
                         
                     </div>
@@ -350,14 +429,16 @@
                                         <p>1. We’ll contact you shortly to validate your information.</p>
                                     </div>
                                     <div class="detailsBox">
-                                        <p>1. We’ll contact you shortly to validate your information.</p>
+                                        <p>2. Then we’ll discuss your coverage options and present you with the best available plan for you.</p>
                                     </div>
                                     <div class="detailsBox">
-                                        <p>1. We’ll contact you shortly to validate your information.</p>
+                                        <p>3. You’ll choose the plan coverage that fits your needs – it’s that easy!</p>
                                     </div>
                                 </div>
-                                <p>Thank You For Your Recent Quote Request; You’re On Your Way To Enjoying Great Deals!
-                                    If You Would Rather Give Us A Call Directly, You Can Reach Us At 888-298-4206.</p>
+                                <p>
+                                    Thank You For Your Recent Quote Request; You’re On Your Way To Enjoying Great Deals!
+                                    If You Would Rather Give Us A Call Directly, You Can Reach Us At 888-298-4206.
+                                </p>
                             </div>
                         </div>
                     </div>

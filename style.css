@@ -159,6 +159,70 @@ body {
 }
 
 
+
+.detailsBox{
+  padding:20px;
+  border-radius: 10px;
+  border:1px solid #000;
+}
+
+.detailsBox p{
+  margin: 0px!important;
+}
+
+
+
+.formSecOne{
+  background-color: #fff;
+  border-radius: 10px;
+  border:1px solid #7070702d;
+  padding:35px!important;
+}
+
+
+.formSection{
+  width: 70%;
+}
+
+.EstimatedResultSec{
+  width: 30%;
+}
+
+.EstCardRslt{
+  background-color: #fff;
+  border-radius: 10px;
+  border:1px solid #7070702d;
+  padding:20px!important;
+}
+
+.EstCardRslt h4{
+  font-size: 25px;
+  color: #002b87;
+  font-weight: 600;
+  text-align: center;
+  border-bottom: 2px solid #00000036;
+}
+
+.EstCardRslt h5{
+  font-size: 20px;
+  color: #CD0118;
+  font-weight: 500;
+  text-align: center;
+  margin: 0px;
+}
+
+.EstCardRslt p {
+  font-size: 15px!important;
+  color:#000;
+  margin: 0px;
+}
+
+
+.innerSecForm h4{
+  
+}
+
+
 /* Body Form */
 
 /* Additional custom styles for the form */

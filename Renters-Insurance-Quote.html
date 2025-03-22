@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Renters Insurance Quote</title>
+  <!-- Bootstrap CSS -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="custom-responsive.css">
+</head>
+
+
+<body>
+
+    <!-- Top Bar -->
+    <div class="top-bar text-center text-sm-start">
+        <div class="container d-flex justify-content-between align-items-center">
+            <span><img src="./assets/1.webp" style="width: 15px; aspect-ratio: 3/4;" alt=""> | 619-736-1313 | Call For Details & To Schedule Your Service Today!</span>
+            <div>
+                <select name="language" id="languange">
+                    <option value="English">EN</option>
+                    <option value="British">BR</option>
+                    <option value="Arabic">AR</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <header class="navbar navbar-expand-lg sticky-top bg-primary navbar-light bg-light p-3">
+        <div class="container">
+            <a class="navbar-brand" href="https://riftofheroes.info/programming/PayLowAssurance/">
+                <img src="./assets/logo.webp" alt="" class="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto me-3 mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="insuranceDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Insurance Services
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="insuranceDropdown">
+                            <li><a class="dropdown-item" href="https://riftofheroes.info/programming/PayLowAssurance/car-insurance-quotes-to-fit-any-budget/">Car Insurance Quotes To Fit Any Budget</a></li>
+                            <li><a class="dropdown-item" href="https://riftofheroes.info/programming/PayLowAssurance/sr-22-insurance/">SR-22 Insurance</a></li>
+                            <li><a class="dropdown-item" href="https://riftofheroes.info/programming/PayLowAssurance/rideshare-insurance/">Rideshare Insurance</a></li>
+                            <li><a class="dropdown-item" href="https://riftofheroes.info/programming/PayLowAssurance/rv-mobile-home-insurance/">RV/Mobile Home Insurance</a></li>
+                            <li><a class="dropdown-item" href="https://riftofheroes.info/programming/PayLowAssurance/homeowners-insurance/">Homeowners Insurance</a></li>
+                            <li><a class="dropdown-item" href="https://riftofheroes.info/programming/PayLowAssurance/renters-insurance/">Renters Insurance</a></li>
+                            <li><a class="dropdown-item" href="https://riftofheroes.info/programming/PayLowAssurance/life-insurance/">Life Insurance</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://riftofheroes.info/programming/PayLowAssurance/careers/">Careers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://riftofheroes.info/programming/PayLowAssurance/blog/">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Google Reviews</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://riftofheroes.info/programming/PayLowAssurance/contact-us/">Contact Us</a>
+                    </li>
+                </ul>
+                <a href="#" class="btn btn-quote">Get a Quote Now!</a>
+            </div>
+        </div>
+    </header>
+    <!-- !Top Bar -->
+
+
+
+
+
+    <section class="container-fluid">
+        <div class="container body-form">
+
+            <form id="multiStepForm">
+
+                <!-- Step 1 -->
+                <div class="step active" id="step1">
+                    
+                <h6>Renters Insurance Quote</h6>
+
+                    <div class="tab-form p-3">
+                        <div class="form-inputs d-flex justify-content-center align-items-center gap-3 w-50">
+                            <div class="mb-3">
+                                <label for="riq_gender" class="form-label">Gender<span id="asterisk">*</span></label>
+                                <select class="form-select" aria-label="Gender">
+                                    <option selected>Select Your Gender</option>
+                                    <option value="riq_Male">Male</option>
+                                    <option value="riq_Female">Female</option>
+                                    <option value="riq_RatherNotLay">Rather Not Say</option>
+                                </select>
+                            </div>          
+                        </div>
+                        <div class="form-inputs d-flex justify-content-center align-items-center gap-3">
+                            <div class="mb-3 frmInput">
+                                <label for="riq-fname" class="form-label">First Name<span id="asterisk">*</span></label>
+                                <input type="text" class="form-control" id="riq-fname" required>
+                            </div>          
+                            <div class="mb-3 frmInput">
+                                <label for="riq-lname" class="form-label">Last Name<span id="asterisk">*</span></label>
+                                <input type="text" class="form-control" id="riq-lname" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-inputs d-flex justify-content-center align-items-center gap-3">
+                            <div class="mb-3 frmInput">
+                                <label for="riq-email" class="form-label">What is your email address?<span id="asterisk">*</span></label>
+                                <input type="email" class="form-control" id="riq-email" required>
+                            </div>          
+                            <div class="mb-3 frmInput">
+                                <label for="riq-Date-Birth" class="form-label">Date of Birth<span id="asterisk">*</span></label>
+                                <div class="bday-inputs">
+                                    <input type="text" class="form-control" id="riq-month" placeholder="Month" required>
+                                    <input type="text" class="form-control" id="riq-day" placeholder="Day" required>
+                                    <input type="text" class="form-control" id="riq-year" placeholder="Year" required>
+                                  </div>
+                            </div>
+                        </div>
+
+                        <div class="form-inputs d-flex justify-content-center align-items-center gap-3 w-50">
+                            <div class="mb-3 frmInput">
+                                <label for="riq-phone" class="form-label">What is your phone number?<span id="asterisk">*</span></label>
+                                <input type="tel" class="form-control" id="riq-phone" required>
+                            </div>
+                        </div>
+
+
+                        <h6 style="font-size: 25px; text-align: left; padding: 20px 0px;">Property To Be Insured</h6>
+
+
+                        <div class="form-inputs d-flex justify-content-center align-items-center gap-3">
+                            <div class="mb-3 frmInput">
+                                <label for="riq-Street_address" class="form-label">Street address (Address use for quoting)<span id="asterisk">*</span></label>
+                                <input type="text" class="form-control" id="riq-Street_address" required>
+                            </div>
+                            <div class="mb-3 frmInput">
+                                <label for="riq-Apt/Suite" class="form-label">Apt/Suite<span id="asterisk">*</span></label>
+                                <input type="text" class="form-control" id="riq-Apt/Suite"required>
+                            </div>   
+                        </div>
+                        <div class="form-inputs d-flex justify-content-center align-items-center gap-3">
+                            <div class="mb-3 frmInput">
+                                <label for="riq-ZipCode" class="form-label">Zip Code<span id="asterisk">*</span></label>
+                                <input type="text" class="form-control" id="riq-ZipCode"required>
+                            </div>          
+                            <div class="mb-3 frmInput">
+                                <label for="riq-CityState" class="form-label">City, State<span id="asterisk">*</span></label>
+                                <input type="text" class="form-control" id="riq-CityState" required>
+                            </div> 
+                        </div>
+                        
+
+                        <div class="form-inputs d-flex align-items-center gap-2">
+                            <p>By Clicking Continue, I Agree To The Pay Low Insurance Privacy Policy And Terms Of Use , And I Consent To Pay Low Insurance Or Their Successors Contacting Me With Offers About Their Services. I Agree That Such Contact May Occur Via Automated System Or Pre-Recorded Message And I Understand Giving Consent To Contact Is Not Required For Any Purchase. I Also Give My Express Written Consent To Be Contacted At The Mobile Phone Number Provided Above For Marketing Purposes By Call, Text, Or Automated Telephone Dialing System, Including With An Artificial Or Prerecorded Voice, Which May Leave A Message. Message And Data Rate May Apply. Message Frequency Varies. Text HELP For Help And STOP To Cancel At Any Time. I Understand That I Am Providing This Consent Even If My Telephone Number Is Currently Listed On A Federal, State, Internal, Or Corporate Do-Not-Call List. I Understand That I Do Not Have To Agree To Receive These Types Of Calls Or Text Messages As A Condition Of Purchasing Any Goods Or Services. This Site Is Protected By Recaptcha And The Google Privacy Policy And Terms Of Use Apply.</p>
+                        </div>
+                        
+                    </div>
+            
+                    <div class="btns d-flex justify-content-end gap-3">
+                        <button type="button" class="btn btn-danger next-btn" onclick="nextStep(2)">Submit</button>
+                    </div>
+
+                </div>
+         
+               <!-- Step 2 -->
+                <div class="step" id="step2">
+
+                    <h6>Get Affordable Renters Coverage Online Today.</h6>
+
+                    <h3 style="text-align: center;">You Can Compare Rates And Sign Up In Seconds.</h3>
+
+                    <p style="text-align: center;">Just Fill Out Your Basic Information Below To Get A Free Quote Now.We Offer Policies Backed By A-Rated Carriers.</p>
+
+                    <h4 style="color:#193A99; font-size: 25px;">Tell us a bit about yourself</h4>
+                    <div class="d-flex gap-4 align-items-start">
+                        <div class="formSection d-flex flex-column gap-4">
+                            <div class="formSecOne">
+                                <div class="form-inputs d-flex justify-content-center align-items-center gap-3">
+                                    <div class="mb-3 frmInput">
+                                        <label for="riq-fname" class="form-label">First Name<span id="asterisk">*</span></label>
+                                        <input type="text" class="form-control" id="riq-fname" required>
+                                    </div>          
+                                    <div class="mb-3 frmInput">
+                                        <label for="riq-mname" class="form-label">Middle Name<span id="asterisk">*</span></label>
+                                        <input type="text" class="form-control" id="riq-mname" required>
+                                    </div>
+                                </div>
+                                <div class="form-inputs d-flex justify-content-center align-items-center gap-3">
+                                    <div class="mb-3 frmInput">
+                                        <label for="riq-lname" class="form-label">Last Name<span id="asterisk">*</span></label>
+                                        <input type="text" class="form-control" id="riq-lname" required>
+                                    </div>          
+                                    <div class="mb-3 frmInput">
+                                        <label for="riq-email" class="form-label">Email Address<span id="asterisk">*</span></label>
+                                        <input type="email" class="form-control" id="riq-email" required>
+                                    </div>
+                                </div>
+                                <div class="form-inputs d-flex flex-column align-items-start w-100">
+                                    <div class="w-100">
+                                        <label for="riq-address" class="form-label">Address<span id="asterisk">*</span></label>
+                                        <input type="text" class="form-control" id="riq-address" required>
+                                        <p>No addresses found, type another address and select it</p>
+                                    </div>          
+                                </div>
+                                
+                                <h4 style="color:#193A99; font-size: 20px;">Your Unit #</h4>
+
+                                <div class="form-inputs d-flex justify-content-center align-items-center gap-3">
+                                    <div class="mb-3 frmInput">
+                                        <label for="riq-Unit" class="form-label">Unit<span id="asterisk">*</span></label>
+                                        <input type="text" class="form-control" id="riq-Unit" required>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="formSecOne">
+                                <div class="accordion" id="accordionExample">
+                                    <div class="accordion-item">
+                                      <h2 class="accordion-header">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                          <div class="innerSecForm">
+                                            <h4>Now tell us about the insurance</h4>
+                                            <p>When will your coverage start? How often do you want to pay for your policy?</p>
+                                          </div>
+                                        </button>
+                                      </h2>
+                                      <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                          <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                      <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                          Accordion Item #2
+                                        </button>
+                                      </h2>
+                                      <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                          <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                      <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                          Accordion Item #3
+                                        </button>
+                                      </h2>
+                                      <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                          <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                        </div>
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="EstimatedResultSec">
+                            <div class="EstCardRslt d-flex flex-column gap-2">
+                                <h4>Estimated Premium</h4>
+                                <div class="d-flex align-items-center gap-3">
+                                    <p>As low as</p>
+                                    <h5>$27.27 / Monthly</h5>
+                                </div>
+                                <p>Estimated Premiums Do Not Include Taxes And Fees.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="btns d-flex justify-content-end gap-3 mt-5">
+                        <button type="button" class="btn btn-primary prev-btn" onclick="prevStep(1)">BACK</button>
+                        <button type="button" class="btn btn-danger next-btn" onclick="nextStep(3)">NEXT</button>
+                    </div>
+                </div>
+         
+         
+                 <!-- Step 3 -->
+                <div class="step" id="step3">
+                    <h6 style="text-align: left; font-size: 30px; color:#193A99;">Fields with * are required</h6>
+
+                    <div class="tab-form p-3">
+
+                        <div class="form-inputs d-flex justify-content-center align-items-center gap-3">
+                            <div class="mb-3 frmInput">
+                                <label for="hiq-insurance_claims" class="form-label">Number of home insurance claims in the last 5 years<span id="asterisk">*</span></label>
+                                <select class="form-select" aria-label="hiq-insurance_claims">
+                                    <option value="insurance_claims1">1</option>
+                                    <option value="insurance_claims2">2</option>
+                                    <option value="insurance_claims3">3</option>
+                                    <option value="insurance_claims3">4</option>
+                                </select>
+                            </div>
+                            <div class="mb-3 frmInput">
+                                <label for="hiq-cancellations_due" class="form-label">Number of home insurance cancellations due to non-payment (past 3 years)<span id="asterisk">*</span></label>
+                                <select class="form-select" aria-label="hiq-cancellations_due">
+                                    <option value="cancellations_due1">1</option>
+                                    <option value="cancellations_due2">2</option>
+                                    <option value="cancellations_due3">3</option>
+                                    <option value="cancellations_due4">4</option>
+                                </select>
+                            </div>   
+                        </div>
+
+
+                        <div class="form-inputs d-flex justify-content-center align-items-center gap-3">
+                            <div class="mb-3 frmInput d-flex flex-column align-items-start">
+                                <label for="hiq-ownanydogs" class="form-label">Do you own any dogs?<span id="asterisk">*</span></label>
+                                <div class="btn-group btn-toggle" role="group">
+                                    <input type="radio" class="btn-check" name="hiq-ownanydogs1" id="ownanydogs_yes1" autocomplete="off" checked>
+                                    <label class="btn btn-primary" for="ownanydogs_yes1">Yes</label>
+                                    <input type="radio" class="btn-check" name="hiq-ownanydogs1" id="ownanydogs_no1" autocomplete="off">
+                                    <label class="btn btn-outline-primary" for="ownanydogs_no1">No</label>
+                                </div>
+                            </div>        
+                            <div class="mb-3 frmInput d-flex flex-column align-items-start">
+                                <label for="hiq-businessConducted" class="form-label">Is business conducted on the property?<span id="asterisk">*</span></label>
+                                <div class="btn-group btn-toggle" role="group">
+                                    <input type="radio" class="btn-check" name="hiq-businessConducted1" id="businessConducted_yes1" autocomplete="off" checked>
+                                    <label class="btn btn-primary" for="businessConducted_yes1">Yes</label>
+                                    <input type="radio" class="btn-check" name="hiq-businessConducted1" id="businessConducted_no1" autocomplete="off">
+                                    <label class="btn btn-outline-primary" for="businessConducted_no1">No</label>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="form-inputs d-flex justify-content-center align-items-center gap-3">
+                            <div class="mb-3 frmInput d-flex flex-column align-items-start">
+                                <label for="hiq-indoor_sprinkler" class="form-label">home has indoor sprinkler system<span id="asterisk">*</span></label>
+                                <div class="btn-group btn-toggle" role="group">
+                                    <input type="radio" class="btn-check" name="hiq-indoor_sprinkler1" id="indoor_sprinkler_yes1" autocomplete="off" checked>
+                                    <label class="btn btn-primary" for="indoor_sprinkler_yes1">Yes</label>
+                                    <input type="radio" class="btn-check" name="hiq-indoor_sprinkler1" id="indoor_sprinkler_no1" autocomplete="off">
+                                    <label class="btn btn-outline-primary" for="indoor_sprinkler_no1">No</label>
+                                </div>
+                            </div>        
+                            <div class="mb-3 frmInput d-flex flex-column align-items-start">
+                                <label for="hiq-retired" class="form-label">Are you retired?<span id="asterisk">*</span></label>
+                                <div class="btn-group btn-toggle" role="group">
+                                    <input type="radio" class="btn-check" name="hiq-retired1" id="retired_yes1" autocomplete="off" checked>
+                                    <label class="btn btn-primary" for="retired_yes1">Yes</label>
+                                    <input type="radio" class="btn-check" name="hiq-retired1" id="retired_no1" autocomplete="off">
+                                    <label class="btn btn-outline-primary" for="retired_no1">No</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+                        <div class="form-inputs d-flex justify-content-center align-items-center gap-3">
+                            <div class="mb-3 frmInput">
+                                <label for="hiq-Burglaralarm" class="form-label w-100">Burglar alarm type<span id="asterisk">*</span></label>
+                                <select class="form-select" aria-label="hiq-Burglaralarm">
+                                    <option value="typeOne">Burglar alarm type One</option>
+                                    <option value="typeTwo">Burglar alarm type Two</option>
+                                    <option value="typeThree">Burglar alarm type Three</option>
+                                </select>
+                            </div>
+                            <div class="mb-3 frmInput">
+                                <label for="hiq-FireAlarm" class="form-label w-100">Fire alarm type<span id="asterisk">*</span></label>
+                                <select class="form-select" aria-label="hiq-FireAlarm">
+                                    <option value="FireAlarmOne">Fire alarm type One</option>
+                                    <option value="FireAlarmTwo">Fire alarm type Two</option>
+                                    <option value="FireAlarmThree">Fire alarm type Three</option>
+                                    <option value="FireAlarmFour">Fire alarm type Four</option>
+                                </select>
+                            </div> 
+                        </div>
+
+                        <div class="form-inputs d-flex justify-content-center align-items-center gap-3 w-50">
+                            <div class="mb-3 frmInput">
+                                <label for="hiq-Smokedetectors" class="form-label w-100">Smoke detectors<span id="asterisk">*</span></label>
+                                <select class="form-select" aria-label="hiq-Smokedetectors">
+                                    <option value="SmokedetectorsOne">Smoke detectors One</option>
+                                    <option value="SmokedetectorsTwo">Smoke detectors Two</option>
+                                    <option value="SmokedetectorsThree">Smoke detectors Three</option>
+                                    <option value="SmokedetectorsFour">Smoke detectors Four</option>
+                                </select>
+                            </div> 
+                        </div>
+                        
+                    </div>
+                
+                    <div class="btns d-flex justify-content-end gap-3">
+                        <button type="button" class="btn btn-primary prev-btn" onclick="prevStep(2)">BACK</button>
+                        <button type="button" class="btn btn-danger next-btn" onclick="nextStep(4)">NEXT</button>
+                    </div>
+                   </div>
+         
+                    <!-- Step 4 -->
+                    <div class="step" id="step4">
+                        <div class="form-title text-center mb-4">
+                            <div class="d-flex flex-column gap-4 align-items-center">
+                                <img style="width: 200px!important;" src="assets/boxImg.png">
+                                <div class="titleText">
+                                    <h1>Your Quote Is On The Way!</h1>
+                                    <p>Here’s what happens next:</p>
+                                </div>
+                                <div class="d-flex gap-3">
+                                    <div class="detailsBox">
+                                        <p>1. We’ll contact you shortly to validate your information.</p>
+                                    </div>
+                                    <div class="detailsBox">
+                                        <p>2. Then we’ll discuss your coverage options and present you with the best available plan for you.</p>
+                                    </div>
+                                    <div class="detailsBox">
+                                        <p>3. You’ll choose the plan coverage that fits your needs – it’s that easy!</p>
+                                    </div>
+                                </div>
+                                <p>
+                                    Thank You For Your Recent Quote Request; You’re On Your Way To Enjoying Great Deals!
+                                    If You Would Rather Give Us A Call Directly, You Can Reach Us At 888-298-4206.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+               <!-- Form -->
+            </form>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 d-flex flex-column align-items-start gap-3">
+            <div class="footer-nav">
+                <!-- <a href="" class="me-2">INSURANCE SERVICE</a> -->
+                <a href="https://riftofheroes.info/programming/PayLowAssurance/careers/" class="me-2">CAREERS</a>
+                <a href="https://riftofheroes.info/programming/PayLowAssurance/blog/" class="me-2">BLOG</a>
+                <a href="" class="me-2">GOOGLE REVIEWS</a>
+                <a href="https://riftofheroes.info/programming/PayLowAssurance/contact-us/" class="me-2">CONTACT US</a>
+            </div>
+                <h1>Contact Us Today!</h1>
+                <p class="custom-title">We’ve served generations. Protecting what’s most important. Let us do the same for you.</p>
+                <a href="#" class="btn btn-quote">Get a Quote Now!</a>
+                <div class="custom-text d-flex flex-wrap align-items-center justify-start gap-3 mb-4 w-100">
+                <p class="m-0">By Continuing To Use Our Website, You Agree To Our Cookie Policy And Privacy Policy.</p>
+                <a href="#">Accept</a>
+                </div>
+            </div>
+            <div class="col-lg-4 d-flex flex-column align-items-start">
+                <ul class="list-unstyled">
+                    <li class="mb-4 d-flex">
+                        <a href="#"><img src="./assets/phone.webp" alt="" class="me-4"></a>
+                        <div class="d-flex flex-column">
+                        <h4 class="mb-1">Phone:</h4>
+                        <span>619-736-1313</span>
+                        </div>
+                    </li> 
+                    <li class="mb-4 d-flex">
+                    <a href="#"><img src="./assets/map.webp" alt="" class="me-4"></a>
+                    <div class="d-flex flex-column">
+                        <h4 class="mb-1">Address:</h4>
+                        <span>595 Fletcher Pkwy, El Cajon, CA 92020</span>
+                    </div>
+                    </li>
+                    <li class="mb-4 d-flex">
+                    <a href="#"><img src="./assets/email.webp" alt="" class="me-4"></a>
+                    <div class="d-flex flex-column">
+                        <h4 class="mb-1">Email:</h4>
+                        <span>sales@paylowinsurance.com</span>
+                    </div>
+                    </li>
+                </ul>
+                <!-- <a href="#" class="btn btn-quote">Get a Quote Now!</a> -->
+                <div class="footer-img d-flex justify-content-end mb-4">
+                <img src="./assets/logo(2).webp" class="logo" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom d-flex justify-content-center">
+    <div class="footer-bottom-container d-flex flex-wrap gap-3 text-center justify-content-between w-100">
+        <div>
+        <p class="m-0">Copyright © 2024 Pay Low Insurance. All Rights Reserved.</p>
+        </div>
+        <div class="social-icons">
+        <a href="#"><i class="bi bi-facebook"></i></a>
+        <a href="#"><i class="bi bi-linkedin"></i></a>
+        <a href="#"><i class="bi bi-twitter"></i></a>
+        <a href="#"><i class="bi bi-instagram"></i></a>
+    </div>
+        <div class="footer-bottom-anchor">
+            <a href="#">Privacy Policy</a> | <a href="#">Terms & Condition</a>
+        </div>
+    </div>
+
+    </div>
+</footer>
+
+<!-- Footer -->
+
+<!-- script -->
+ <script src="script.js"></script>
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<!-- JQUERY -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        let $yearSelect = $("#yearSelect");
+        
+        for (let year = 1999; year <= 2025; year++) {
+            $yearSelect.append(`<option value="${year}">${year}</option>`);
+        }
+    });
+</script>
+
+
+</body>
+</html>

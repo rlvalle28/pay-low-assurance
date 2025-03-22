@@ -7,7 +7,7 @@ function nextStep(step) {
     document.getElementById('step' + step).classList.add('active');
     
     // Update progress bar
-    let progress = (step - 1) * 10;
+    let progress = (step - 1) * 33.3;
     document.getElementById('progressBar').style.width = progress + '%';
     document.getElementById('progressPercentage').innerText = Math.round(progress) + '%';
   }
@@ -21,7 +21,7 @@ function nextStep(step) {
     document.getElementById('step' + step).classList.add('active');
     
     // Update progress bar
-    let progress = (step - 1) * 10;
+    let progress = (step - 1) * 33.3;
     document.getElementById('progressBar').style.width = progress + '%';
     document.getElementById('progressPercentage').innerText = Math.round(progress) + '%';
   }
