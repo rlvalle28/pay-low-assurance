@@ -220,47 +220,221 @@
                                 </div>
                             </div>
 
-                            <div class="formSecOne">
-                                <div class="accordion" id="accordionExample">
-                                    <div class="accordion-item">
-                                      <h2 class="accordion-header">
-                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                          <div class="innerSecForm">
-                                            <h4>Now tell us about the insurance</h4>
-                                            <p>When will your coverage start? How often do you want to pay for your policy?</p>
-                                          </div>
-                                        </button>
-                                      </h2>
-                                      <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
-                                          <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                                        </div>
+                            <div class="accordion" id="accordionSection">
+                                <div class="accordion-item">
+                                  <h2 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                      <div class="innerSecForm">
+                                        <h4>Now tell us about the insurance</h4>
+                                        <p>When will your coverage start? How often do you want to pay for your policy?</p>
                                       </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                      <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                          Accordion Item #2
-                                        </button>
-                                      </h2>
-                                      <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
-                                          <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                    </button>
+                                  </h2>
+                                  <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <div class="form-inputs d-flex justify-content-center align-items-center gap-3">
+                                            <div class="mb-3 frmInput">
+                                                <label for="riq-polSrtDt" class="form-label">Policy Start Date<span id="asterisk">*</span></label>
+                                                <input type="date" class="form-control" id="riq-polSrtDt" required>
+                                            </div>          
+                                            <div class="mb-3 frmInput">
+                                                <label for="riq-exprtDt" class="form-label">Expiration Date<span id="asterisk">*</span></label>
+                                                <input type="date" class="form-control" id="riq-exprtDt" required>
+                                            </div>
                                         </div>
-                                      </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                      <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                          Accordion Item #3
-                                        </button>
-                                      </h2>
-                                      <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
-                                          <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                        <div class="form-inputs d-flex justify-content-center align-items-center gap-3">
+                                            <div class="mb-3 d-flex">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                        I certify there have been no losses, accidents or circumstances that might give rise to a claim under this policy within the last 24 hours
+                                                    </label>
+                                                  </div>
+                                            </div>
                                         </div>
-                                      </div>
+                                        <div class="form-inputs d-flex justify-content-center align-items-center gap-3">
+                                            <div class="mb-3 frmInput">
+                                                <label for="riq-pymPlnOpt" class="form-label">Payment Plan Options<span id="asterisk">*</span></label>
+                                                <select class="form-select" aria-label="riq-pymPlnOpt">
+                                                    <option value="riq-Yearly">Yearly</option>
+                                                    <option value="riq-Monthly">Monthly</option>
+                                                    <option value="riq-Daily">Daily</option>
+                                                </select>
+                                            </div>
+                                        </div>
                                     </div>
+                                  </div>
+                                </div>
+                                <div class="accordion-item">
+                                  <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        <div class="innerSecForm">
+                                            <h4>Coverage Options</h4>
+                                            <p>Please choose how much your policy will cover for each category in the event of a claim.</p>
+                                        </div>
+                                    </button>
+                                  </h2>
+                                  <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <div class="form-inputs d-flex justify-content-center align-items-center gap-3">
+                                            <div class="mb-3 frmInput">
+                                                <label for="riq-pymPlnOpt" class="form-label">Payment Plan Options<span id="asterisk">*</span></label>
+                                                <p>Coverage designed to pay for medical costs to others who are by chance injured on an insured property up to the policy's limits.</p>
+                                                <select class="form-select" aria-label="riq-pymPlnOpt">
+                                                    <option value="riq-Yearly">Yearly</option>
+                                                    <option value="riq-Monthly">Monthly</option>
+                                                    <option value="riq-Daily">Daily</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-inputs d-flex justify-content-center align-items-center gap-3">
+                                            <div class="mb-3 frmInput">
+                                                <label for="riq-liability" class="form-label">Liability<span id="asterisk">*</span></label>
+                                                <p>Liability coverage protects you in an event of negligent damage to your apartment, the community, or other residents.</p>
+                                                <select class="form-select" aria-label="riq-liability">
+                                                    <option value="riq-Liability1">Liability 1</option>
+                                                    <option value="riq-Liability2">Liability 2</option>
+                                                    <option value="riq-Liability3">Liability 3</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-inputs d-flex justify-content-center align-items-center gap-3">
+                                            <div class="mb-3 frmInput">
+                                                <label for="riq-Contents" class="form-label">Contents<span id="asterisk">*</span></label>
+                                                <p>Coverage designed to pay for medical costs to others who are by chance injured on an insured property up to the policy's limits.</p>
+                                                <select class="form-select" aria-label="riq-Contents">
+                                                    <option value="riq-Contents1">Contents 1</option>
+                                                    <option value="riq-Contents2">Contents 2</option>
+                                                    <option value="riq-Contents3">Contents 3</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="accordion-item">
+                                  <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        <div class="innerSecForm">
+                                            <h4>Insured Details</h4>
+                                            <p>Please confirm your details and enter information for any other person covered under your policy.</p>
+                                        </div>
+                                    </button>
+                                  </h2>
+                                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <div class="form-inputs d-flex justify-content-center align-items-center gap-3">
+                                                <div class="mb-3 frmInput">
+                                                    <label for="riq-insDtlsfname" class="form-label">First Name<span id="asterisk">*</span></label>
+                                                    <input type="text" class="form-control" id="riq-insDtlsfname" required>
+                                                </div>          
+                                                <div class="mb-3 frmInput">
+                                                    <label for="riq-insDtlsmname" class="form-label">Middle Name<span id="asterisk">*</span></label>
+                                                    <input type="text" class="form-control" id="riq-insDtlsmname" required>
+                                                </div>
+                                            </div>
+                                            <div class="form-inputs d-flex justify-content-center align-items-center gap-3">
+                                                <div class="mb-3 frmInput">
+                                                    <label for="riq-insDtlslname" class="form-label">Last Name<span id="asterisk">*</span></label>
+                                                    <input type="text" class="form-control" id="riq-insDtlslname" required>
+                                                </div>          
+                                                <div class="mb-3 frmInput">
+                                                    <label for="riq-insDtlsemail" class="form-label">Email Address<span id="asterisk">*</span></label>
+                                                    <input type="email" class="form-control" id="riq-insDtlsemail" required>
+                                                </div>
+                                            </div>
+                                            <div class="form-inputs d-flex justify-content-center align-items-center gap-3">
+                                                <div class="mb-3 frmInput">
+                                                    <label for="riq-insDtlsbdate" class="form-label">Birth Date<span id="asterisk">*</span></label>
+                                                    <input type="date" class="form-control" id="riq-insDtlsbdate" required>
+                                                </div>          
+                                            </div>
+                                            <div class="form-inputs d-flex justify-content-center align-items-center gap-3">
+                                                <div class="mb-3 frmInput">
+                                                    <label for="riq-insDtlsPnumber" class="form-label">Phone Number<span id="asterisk">*</span></label>
+                                                    <input type="tel" class="form-control" id="riq-insDtlsPnumber" required>
+                                                </div>          
+                                            </div>
+                                            <div class="form-inputs d-flex justify-content-center align-items-center gap-3">
+                                                <div class="mb-3 frmInput">
+                                                    <label for="riq-insDtlsMaddrs1" class="form-label">Mailing Address Line 1<span id="asterisk">*</span></label>
+                                                    <input type="text" class="form-control" id="riq-insDtlsMaddrs1" required>
+                                                </div>          
+                                            </div>
+                                            <div class="form-inputs d-flex justify-content-center align-items-center gap-3">
+                                                <div class="mb-3 frmInput">
+                                                    <label for="riq-insDtlsMaddrs2" class="form-label">Mailing Address Line 2<span id="asterisk">*</span></label>
+                                                    <input type="text" class="form-control" id="riq-insDtlsMaddrs2" required>
+                                                </div>          
+                                            </div>
+                                            <div class="form-inputs d-flex justify-content-center align-items-center gap-3">
+                                                <div class="mb-3 frmInput">
+                                                    <label for="riq-insDtlsMailCity" class="form-label">Mailing City<span id="asterisk">*</span></label>
+                                                    <input type="text" class="form-control" id="riq-insDtlsMailCity" required>
+                                                </div>          
+                                            </div>
+                                            <div class="form-inputs d-flex justify-content-center align-items-center gap-3">
+                                                <div class="mb-3 frmInput">
+                                                    <label for="riq-insDtlsMailState" class="form-label">Mailing State<span id="asterisk">*</span></label>
+                                                    <select class="form-select" aria-label="riq-insDtlsMailState">
+                                                        <option value="riq-state1">State 1</option>
+                                                        <option value="riq-state2">State 2</option>
+                                                        <option value="riq-state3">State 3</option>
+                                                    </select>
+                                                </div>          
+                                                <div class="mb-3 frmInput">
+                                                    <label for="riq-insDtlsMailZcode" class="form-label">Mailing Zip Code<span id="asterisk">*</span></label>
+                                                    <select class="form-select" aria-label="riq-insDtlsMailZcode">
+                                                        <option value="riq-ZipCode1">Zip Code 1</option>
+                                                        <option value="riq-ZipCode2">Zip Code 2</option>
+                                                        <option value="riq-ZipCode3">Zip Code 3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="form-inputs d-flex justify-content-start align-items-center gap-3">
+                                                <h4 style="color:#193A99; text-align: left; font-size: 18px;">Additional Insured (Roommate) Details 1 out  of 1</h4>         
+                                            </div>
+                                            <div class="form-inputs d-flex justify-content-center align-items-center gap-3">
+                                                <div class="mb-3 frmInput">
+                                                    <label for="riq-insDtlsAddfname" class="form-label">First Name<span id="asterisk">*</span></label>
+                                                    <input type="text" class="form-control" id="riq-insDtlsAddfname" required>
+                                                </div>          
+                                                <div class="mb-3 frmInput">
+                                                    <label for="riq-insDtlsAddmname" class="form-label">Middle Name<span id="asterisk">*</span></label>
+                                                    <input type="text" class="form-control" id="riq-insDtlsAddmname" required>
+                                                </div>
+                                            </div>
+                                            <div class="form-inputs d-flex justify-content-center align-items-center gap-3">
+                                                <div class="mb-3 frmInput">
+                                                    <label for="riq-insDtlsAddlname" class="form-label">Last Name<span id="asterisk">*</span></label>
+                                                    <input type="text" class="form-control" id="riq-insDtlsAddlname" required>
+                                                </div>          
+                                                <div class="mb-3 frmInput">
+                                                    <label for="riq-insDtlsAddemail" class="form-label">Email Address<span id="asterisk">*</span></label>
+                                                    <input type="email" class="form-control" id="riq-insDtlsAddemail" required>
+                                                </div>
+                                            </div>
+                                            <div class="form-inputs d-flex justify-content-center align-items-center gap-3">
+                                                <div class="mb-3 frmInput">
+                                                    <label for="riq-insDtlsAddbdate" class="form-label">Birth Date<span id="asterisk">*</span></label>
+                                                    <input type="date" class="form-control" id="riq-insDtlsAddbdate" required>
+                                                </div>          
+                                            </div>
+                                            <div class="form-inputs d-flex justify-content-center align-items-center gap-3">
+                                                <div class="mb-3 frmInput">
+                                                    <label for="riq-insDtlsAddCnumber" class="form-label">Contact Phone<span id="asterisk">*</span></label>
+                                                    <input type="tel" class="form-control" id="riq-insDtlsAddCnumber" required>
+                                                </div>          
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-check m-3">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        By Checking This Box, You Agree To Receive Policy Documents, Disclosures, Billing Statements And Other Communications Regarding Your Policy Electronically By Email And/Or Access To A Secure Website, In Accordance With The Terms Of The
+                                        "Agreement To Conduct Business Electronically"
+                                    </label>
                                 </div>
                             </div>
                         </div>
@@ -276,152 +450,123 @@
                         </div>
                     </div>
 
-                    <div class="btns d-flex justify-content-end gap-3 mt-5">
-                        <button type="button" class="btn btn-primary prev-btn" onclick="prevStep(1)">BACK</button>
-                        <button type="button" class="btn btn-danger next-btn" onclick="nextStep(3)">NEXT</button>
+                    <div class="btns d-flex justify-content-start gap-3 mt-5">
+                        <button type="button" class="btn btn-danger next-btn" onclick="nextStep(3)">Continue</button>
                     </div>
                 </div>
          
          
-                 <!-- Step 3 -->
-                <div class="step" id="step3">
-                    <h6 style="text-align: left; font-size: 30px; color:#193A99;">Fields with * are required</h6>
-
-                    <div class="tab-form p-3">
-
-                        <div class="form-inputs d-flex justify-content-center align-items-center gap-3">
-                            <div class="mb-3 frmInput">
-                                <label for="hiq-insurance_claims" class="form-label">Number of home insurance claims in the last 5 years<span id="asterisk">*</span></label>
-                                <select class="form-select" aria-label="hiq-insurance_claims">
-                                    <option value="insurance_claims1">1</option>
-                                    <option value="insurance_claims2">2</option>
-                                    <option value="insurance_claims3">3</option>
-                                    <option value="insurance_claims3">4</option>
-                                </select>
-                            </div>
-                            <div class="mb-3 frmInput">
-                                <label for="hiq-cancellations_due" class="form-label">Number of home insurance cancellations due to non-payment (past 3 years)<span id="asterisk">*</span></label>
-                                <select class="form-select" aria-label="hiq-cancellations_due">
-                                    <option value="cancellations_due1">1</option>
-                                    <option value="cancellations_due2">2</option>
-                                    <option value="cancellations_due3">3</option>
-                                    <option value="cancellations_due4">4</option>
-                                </select>
-                            </div>   
-                        </div>
-
-
-                        <div class="form-inputs d-flex justify-content-center align-items-center gap-3">
-                            <div class="mb-3 frmInput d-flex flex-column align-items-start">
-                                <label for="hiq-ownanydogs" class="form-label">Do you own any dogs?<span id="asterisk">*</span></label>
-                                <div class="btn-group btn-toggle" role="group">
-                                    <input type="radio" class="btn-check" name="hiq-ownanydogs1" id="ownanydogs_yes1" autocomplete="off" checked>
-                                    <label class="btn btn-primary" for="ownanydogs_yes1">Yes</label>
-                                    <input type="radio" class="btn-check" name="hiq-ownanydogs1" id="ownanydogs_no1" autocomplete="off">
-                                    <label class="btn btn-outline-primary" for="ownanydogs_no1">No</label>
-                                </div>
-                            </div>        
-                            <div class="mb-3 frmInput d-flex flex-column align-items-start">
-                                <label for="hiq-businessConducted" class="form-label">Is business conducted on the property?<span id="asterisk">*</span></label>
-                                <div class="btn-group btn-toggle" role="group">
-                                    <input type="radio" class="btn-check" name="hiq-businessConducted1" id="businessConducted_yes1" autocomplete="off" checked>
-                                    <label class="btn btn-primary" for="businessConducted_yes1">Yes</label>
-                                    <input type="radio" class="btn-check" name="hiq-businessConducted1" id="businessConducted_no1" autocomplete="off">
-                                    <label class="btn btn-outline-primary" for="businessConducted_no1">No</label>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div class="form-inputs d-flex justify-content-center align-items-center gap-3">
-                            <div class="mb-3 frmInput d-flex flex-column align-items-start">
-                                <label for="hiq-indoor_sprinkler" class="form-label">home has indoor sprinkler system<span id="asterisk">*</span></label>
-                                <div class="btn-group btn-toggle" role="group">
-                                    <input type="radio" class="btn-check" name="hiq-indoor_sprinkler1" id="indoor_sprinkler_yes1" autocomplete="off" checked>
-                                    <label class="btn btn-primary" for="indoor_sprinkler_yes1">Yes</label>
-                                    <input type="radio" class="btn-check" name="hiq-indoor_sprinkler1" id="indoor_sprinkler_no1" autocomplete="off">
-                                    <label class="btn btn-outline-primary" for="indoor_sprinkler_no1">No</label>
-                                </div>
-                            </div>        
-                            <div class="mb-3 frmInput d-flex flex-column align-items-start">
-                                <label for="hiq-retired" class="form-label">Are you retired?<span id="asterisk">*</span></label>
-                                <div class="btn-group btn-toggle" role="group">
-                                    <input type="radio" class="btn-check" name="hiq-retired1" id="retired_yes1" autocomplete="off" checked>
-                                    <label class="btn btn-primary" for="retired_yes1">Yes</label>
-                                    <input type="radio" class="btn-check" name="hiq-retired1" id="retired_no1" autocomplete="off">
-                                    <label class="btn btn-outline-primary" for="retired_no1">No</label>
-                                </div>
-                            </div>
-                        </div>
-
-                        
-                        <div class="form-inputs d-flex justify-content-center align-items-center gap-3">
-                            <div class="mb-3 frmInput">
-                                <label for="hiq-Burglaralarm" class="form-label w-100">Burglar alarm type<span id="asterisk">*</span></label>
-                                <select class="form-select" aria-label="hiq-Burglaralarm">
-                                    <option value="typeOne">Burglar alarm type One</option>
-                                    <option value="typeTwo">Burglar alarm type Two</option>
-                                    <option value="typeThree">Burglar alarm type Three</option>
-                                </select>
-                            </div>
-                            <div class="mb-3 frmInput">
-                                <label for="hiq-FireAlarm" class="form-label w-100">Fire alarm type<span id="asterisk">*</span></label>
-                                <select class="form-select" aria-label="hiq-FireAlarm">
-                                    <option value="FireAlarmOne">Fire alarm type One</option>
-                                    <option value="FireAlarmTwo">Fire alarm type Two</option>
-                                    <option value="FireAlarmThree">Fire alarm type Three</option>
-                                    <option value="FireAlarmFour">Fire alarm type Four</option>
-                                </select>
-                            </div> 
-                        </div>
-
-                        <div class="form-inputs d-flex justify-content-center align-items-center gap-3 w-50">
-                            <div class="mb-3 frmInput">
-                                <label for="hiq-Smokedetectors" class="form-label w-100">Smoke detectors<span id="asterisk">*</span></label>
-                                <select class="form-select" aria-label="hiq-Smokedetectors">
-                                    <option value="SmokedetectorsOne">Smoke detectors One</option>
-                                    <option value="SmokedetectorsTwo">Smoke detectors Two</option>
-                                    <option value="SmokedetectorsThree">Smoke detectors Three</option>
-                                    <option value="SmokedetectorsFour">Smoke detectors Four</option>
-                                </select>
-                            </div> 
-                        </div>
-                        
-                    </div>
-                
-                    <div class="btns d-flex justify-content-end gap-3">
-                        <button type="button" class="btn btn-primary prev-btn" onclick="prevStep(2)">BACK</button>
-                        <button type="button" class="btn btn-danger next-btn" onclick="nextStep(4)">NEXT</button>
-                    </div>
-                   </div>
+                 
          
-                    <!-- Step 4 -->
-                    <div class="step" id="step4">
-                        <div class="form-title text-center mb-4">
-                            <div class="d-flex flex-column gap-4 align-items-center">
-                                <img style="width: 200px!important;" src="assets/boxImg.png">
-                                <div class="titleText">
-                                    <h1>Your Quote Is On The Way!</h1>
-                                    <p>Here’s what happens next:</p>
+                <!-- Step 3 -->
+                <div class="step" id="step3">
+                    <div class="form-title text-center mb-4">
+                        <div class="d-flex flex-column gap-4 align-items-center">
+                            <div class="titleText">
+                                <h4>Congrats, You Are Approved!</h4>
+                                <h1>$91.61</h1>
+                                <h5>$22.49 Per Month Afterwards</h5>
+                                <p>Price Includes Taxes And Fees For Your Locality</p>
+                            </div>
+                            <div class="formSecOne w-100">
+                                <div class="totalresultSection d-flex gap-3">
+                                    <div class="leftCardItem w-50">
+                                        <div class="cardInfo d-flex flex-wrap">
+                                            <div class="infoItem w-50">
+                                                <label>Card*</label>
+                                                <p>**** ****** *****</p>
+                                            </div>
+                                            <div class="infoItem w-50">
+                                                <label>Exp*</label>
+                                                <p>MM/YY</p>
+                                            </div>
+                                            <div class="infoItem w-50">
+                                                <label>CVC*</label>
+                                                <p>CVC</p>
+                                            </div>
+                                            <div class="infoItem w-50">
+                                                <label>Exp*</label>
+                                                <p>Zip</p>
+                                            </div>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                I Agree To The Terms Of Services And Privacy Policy
+                                            </label>
+                                        </div>
+                                        <div class="btns d-flex flex-column gap-2 mt-3">
+                                            <button type="button" class="btn btn-danger next-btn w-100" >CONTINUE</button>
+                                            <button type="button" class="btn btn-dark w-100" onclick="prevStep(2)">BACK</button>
+                                        </div>
+                                    </div>
+                                    <div class="rightCardItem w-50">
+                                        <div class="form-inputs d-flex justify-content-center align-items-center gap-3">
+                                            <div class="mb-3 frmInput d-flex align-items-start flex-column">
+                                                <label for="riq-insDtlsBllprd" class="form-label">Billing period*<span id="asterisk">*</span></label>
+                                                <select class="form-select" aria-label="riq-insDtlsBllprd">
+                                                    <option value="riq-Bllprd1">Billing period 1</option>
+                                                    <option value="riq-Bllprd2">Billing period 2</option>
+                                                    <option value="riq-Bllprd3">Billing period 3</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="innerCardItem">
+                                            <h5 style="padding: 15px; text-align: left;">Premium Breakdown</h5>
+                                            <table class="table table-success table-striped w-100">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Policy Premium</td>
+                                                        <td>$300.00</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Taxes</td>
+                                                        <td>$0.00</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Additional Fees**</td>
+                                                        <td>$39.00</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Total Annual Cost</td>
+                                                        <td>$339.00</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Payment Schedule</td>
+                                                        <td>Monthly</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Pay today</td>
+                                                        <td>$91.61</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <div class="p-4">
+                                                <h5 style="text-align: left;">Premium Breakdown</h5>
+                                                <p style="text-align: left; font-size: 14px; color:#000;">A Detailed Listing Of All Policy Coverages, Government Levied Taxes, And Assessments Will Be Provided With Your Policy. Please Refer To Your Installment Schedule For Your Premium Breakdown.</p>
+                                                <div class="mb-3 frmInput d-flex align-items-start flex-column">
+                                                    <label for="riq-PaymentSchedule" class="form-label">Payment Schedule<span id="asterisk">*</span></label>
+                                                    <input type="tel" class="form-control" id="riq-PaymentSchedule" required>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="d-flex gap-3">
-                                    <div class="detailsBox">
-                                        <p>1. We’ll contact you shortly to validate your information.</p>
-                                    </div>
-                                    <div class="detailsBox">
-                                        <p>2. Then we’ll discuss your coverage options and present you with the best available plan for you.</p>
-                                    </div>
-                                    <div class="detailsBox">
-                                        <p>3. You’ll choose the plan coverage that fits your needs – it’s that easy!</p>
-                                    </div>
-                                </div>
-                                <p>
-                                    Thank You For Your Recent Quote Request; You’re On Your Way To Enjoying Great Deals!
-                                    If You Would Rather Give Us A Call Directly, You Can Reach Us At 888-298-4206.
-                                </p>
+                                <p style="font-size: 14px; padding: 10px 0px; color:#000; text-align: left;">The Renters Insurance Product Is Underwritten By QBE Praetorian Insurance Company (California Certificate Of Authority 8725). Praetorian Maintains Its Principal Place Of Business At Wall Street Plaza, 55 Water Street NY, NY 10041.</p>
+                                <p style="font-size: 14px; padding: 10px 0px; color:#000; text-align: left;">A Detailed Listing Of All Policy Coverages, Government Levied Taxes And Assessments Will Be Provided With Your Policy.</p>
+                                <p style="font-size: 14px; padding: 10px 0px; color:#000; text-align: left;">When Choosing The Monthly Payment Option, 12 Payments Will Be Scheduled To Pay The Total Premium Over The Course Of The Year. An Initial Down Payment In The Amount Stated Above Will Be Billed Upon Submitting The Policy Application. The Remaining Total Premium Will Then Be Divided Among The Last 11 Months.</p>
+                                <p style="font-size: 14px; padding: 10px 0px; color:#000; text-align: left;">Your Policy Will Automatically Renew After One Year. You Can Cancel Your Service At Any Time By Contacting Us. You Will Be Notified Of Your Upcoming Renewal 30 Days Prior. By Purchasing, You Agree To Any Reoccurring Payments That Are Charged By Accident Or Because You Failed To Cancel Your Policy.</p>
+                                <p style="font-size: 14px; padding: 10px 0px; color:#000; text-align: left;">*1St Payment</p>
+                                <p style="font-size: 14px; padding: 10px 0px; color:#000; text-align: left;">**A $25.00 Non-Refundable Policy Fee And A Processing Fee Are Included With Your First Installment.</p>
+                                <p style="font-size: 14px; padding: 10px 0px; color:#000; text-align: left;">Legal Notices
+                                    Any Person Who Knowingly And With Intent To Defraud Any Insurance Company Or Other Person Files An Application For Insurance Or Statement Of Claim Containing Any Materially False Information, Or Conceals For The Purpose Of Misleading, Information Concerning Any Fact Material Thereto, Commits A Fraudulent Insurance Act, Which Is A Crime, And Shall Also Be Subject To A Civil Penalty Not To Exceed Five Thousand Dollars And The Stated Value Of The Claim For Each Such Violation.
+                                    </p>
+                                <p style="font-size: 14px; padding: 10px 0px; color:#000; text-align: left;">By Clicking 'Purchase' You Agree To Our Terms Of Use.</p>
+                                <p style="font-size: 14px; padding: 10px 0px; color:#000; text-align: left;">Click Here To See Our Standard Disclosure</p>
                             </div>
                         </div>
                     </div>
+                </div>
                <!-- Form -->
             </form>
         </div>
